@@ -523,15 +523,6 @@ while ($data = mysql_fetch_array($a)) { ?>
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-
 <div class="box box-solid box-primary">
 <div class="box-header">
 <h3 class="btn btn disabled box-title">

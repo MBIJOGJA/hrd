@@ -60,7 +60,7 @@ default:
                   <a class="btn btn-xs btn-info"   data-toggle="tooltip" title="Edit Data <?php echo $data['id_hiring'];?>" href="?module=recruitment&aksi=edit&id_hiring=<?php echo $data['id_hiring'];?>"><i class="glyphicon glyphicon-edit"></i></a>
                   <a class="btn btn-xs btn-warning"   data-toggle="tooltip" title="Hapus Semua Data recruitment" href="<?php echo $aksi ?>?module=recruitment&aksi=hapus&id_hiring=<?php echo $data['id_hiring'];?>"  alt="Delete Data" onclick="return confirm('ANDA YAKIN AKAN MENGHAPUS DATA <?php echo $Kode; ?>  ?')"> <i class="glyphicon glyphicon-trash"></i></a>
                   <br><br>
-                  <a class="btn btn-xs btn-success"   data-toggle="tooltip" title="Link untuk form input data <?php echo $data['id_hiring'];?>" href="../input-data/" target="_blank"><i class="fa fa-link"></i></a>
+                  <a class="btn btn-xs btn-success"   data-toggle="tooltip" title="Link untuk form input data <?php echo $data['id_hiring'];?>" href="index2.php" target="_blank"><i class="fa fa-link"></i></a>
                 </td>
                 <?php
               }
