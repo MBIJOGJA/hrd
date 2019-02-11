@@ -680,13 +680,24 @@ while ($data = mysql_fetch_array($a)) { ?>
 
 
 
-            
+
             <fieldset>
                 <h3 align="center">Pendidikan & Kegiatan</h3>
                 <br>
                 <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 <br>
+                <div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Pendidikan </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+               <table border="0" width="1030">
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Jenjang Pendidikan</label>
                     <input type="text" name="jenjang_pend_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="jenjang_pend_smp" class="form-control" placeholder="2." /> <br>
@@ -694,8 +705,10 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="jenjang_pend_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="jenjang_pend_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="jenjang_pend_s2" class="form-control" placeholder="6." /> <br>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Tahun Pendidikan</label>
                     <input type="text" name="thn_pend_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="thn_pend_smp" class="form-control" placeholder="2." /> <br>
@@ -703,8 +716,10 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="thn_pend_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="thn_pend_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="thn_pend_s2" class="form-control" placeholder="6." /> <br>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Nama Sekolah</label>
                     <input type="text" name="nm_sklh_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="nm_sklh_smp" class="form-control" placeholder="2." /> <br>
@@ -712,8 +727,10 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="nm_univ_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="nm_univ_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="nm_univ_s2" class="form-control" placeholder="6." /> <br>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Lulus Tahun</label>
                     <input type="text" name="lulus_thn_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="lulus_thn_smp" class="form-control" placeholder="2." /> <br>
@@ -721,7 +738,23 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="lulus_thn_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="lulus_thn_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="lulus_thn_s2" class="form-control" placeholder="6." /> <br>
+                </td>
                 </div>
+            </tr>
+        </div>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
                 <h4 align="center">Kemampuan Bahasa Asing</h4>
                 <br>
                 <div class="form-group">
