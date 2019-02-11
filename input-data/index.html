@@ -35,14 +35,6 @@
                     <p>Selesai</p>
                 </div>
             </div>
-
-
-
-
-
-
-
-
             <fieldset>
                 <h3 align="center">Biodata</h3>
                 <br>
@@ -66,7 +58,55 @@
                 </div> 
                 <div class="form-group">
                     <td>
-                         <label>Agama</label>
+                    <label>Jenis Kelamin</label> <br>
+                    <input name="jk" class="minimal" type="radio" value="Laki-laki" checked> Laki-laki &nbsp;&nbsp;
+                    <input name="jk" class="minimal" type="radio" value="Perempuan"> Perempuan
+                </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>Kewarganegaraan</label>
+                    <input type="text" name="kewarganegaraan" class="form-control"/>
+                </td>
+                </div>
+            </tr>
+                <div class="form-group">
+                    <tr>
+                        <td>
+                    <label>Alamat Lengkap</label>
+                    <input type="text" name="alamat_sesuai_ktp" class="form-control"/>
+                </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>Alamat Domisil</label>
+                    <input type="text" name="alamat_domisil" class="form-control"/>
+                </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>No HP</label>
+                    <input type="text" name="phone" class="form-control" placeholder="08xxxxxxxxxx" />
+                </td>
+            </div>
+        </tr>
+                </div>
+                <div class="form-group">
+                    <tr>
+                        <td>
+                    <label>Tempat Lahir</label>
+                    <input type="text" name="tempat_lahir" class="form-control"/>
+                </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>Tanggal Lahir</label>
+                    <input type="date" name="tgl_lahir" class="form-control"/>
+                </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>Agama</label>
                         <select name="agama" class="form-control"><option> Pilih</option>
                             <option name="agama" value="Islam"> Islam </option>
                             <option name="agama" value="Kristen"> Kristen </option>
@@ -75,34 +115,51 @@
                             <option name="agama" value="Budha"> Budha </option>
                             <option name="agama" value="Khonghucu"> Khonghucu </option>
                 </select>
-                </td>
+            </td>
+        </div>
+    </tr>
                 </div>
-                <div class="form-group">
-                    <td>
-                         <label>No KTP</label>
-                    <input type="text" name="no_ktp" class="form-control"/>
-                </td>
-                </div>
-            </tr>
                 <div class="form-group">
                     <tr>
                         <td>
-                            <label>Jenis Kelamin</label> <br>
-                             <select name="jenis_kelamin" class="form-control"><option> Pilih</option>
-                        <option name="jenis_kelamin" value="Menikah"> Laki-Laki </option>
-                        <option name="jenis_kelamin" value="Belum Menikah"> Perempuan </option>
-                    </select>
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                        <label>Golongan Darah</label>
+                    <label>Golongan Darah</label>
                     <input type="text" name="gol_darah" class="form-control"/>
                 </td>
                 </div>
                 <div class="form-group">
                     <td>
-                  <label>No Rekening</label>
+                    <label>Status Pernikahan</label>
+                    <select name="status_pernikahan" class="form-control"><option> Pilih</option>
+                        <option name="status_pernikahan" value="Menikah"> Menikah </option>
+                        <option name="status_pernikahan" value="Belum Menikah"> Belum Menikah </option>
+                        <option name="status_pernikahan" value="Bercerai"> Bercerai </option>
+                    </select>
+                </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>Tinggi Badan</label>
+                    <input type="text" name="tinggi_bdn" class="form-control"/>
+                </td>
+            </div>
+        </tr>
+                </div>
+                <div class="form-group">
+                    <tr>
+                        <td>
+                    <label>Berat Badan</label>
+                    <input type="text" name="berat_bdn" class="form-control"/>
+                    </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>No KTP</label>
+                    <input type="text" name="no_ktp" class="form-control"/>
+                </td>
+                </div>
+                <div class="form-group">
+                    <td>
+                    <label>No Rekening</label>
                     <input type="text" name="no_rek" class="form-control"/>
                 </td>
             </div>
@@ -111,84 +168,14 @@
                 <div class="form-group">
                     <tr>
                         <td>
-                            <label>Alamat Lengkap</label>
-                    <input type="text" name="alamat_sesuai_ktp" class="form-control"/>
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                        <label>Tinggi Badan</label>
-                    <input type="text" name="tinggi_bdn" class="form-control"/>
-                       
-                </div>
-                <div class="form-group">
-                    <td>
-                        <label>Nama Bank</label>
+                    <label>Nama Bank</label>
                     <input type="text" name="nm_bank" class="form-control"/>
-            </td>
-        </div>
-    </tr>
-                </div>
-                <div class="form-group">
-                    <tr>
-                        <td>
-                             <label>Alamat Domisil</label>
-                    <input type="text" name="alamat_domisil" class="form-control"/>
                 </td>
                 </div>
                 <div class="form-group">
                     <td>
-                         <label>Berat Badan</label>
-                    <input type="text" name="berat_bdn" class="form-control"/>
-                </td>
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                        <label>Nama Pemilik Rekening</label>
+                    <label>Nama Pemilik Rekening</label>
                     <input type="text" name="nm_pemilik_rek" class="form-control"/>
-                     
-                </td>
-            </div>
-        </tr>
-                </div>
-                <div class="form-group">
-                    <tr>
-                        <td>
-                             <label>Tempat Lahir</label>
-                    <input type="text" name="tempat_lahir" class="form-control"/> 
-                    </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                         <label>No HP</label>
-                    <input type="text" name="phone" class="form-control" placeholder="08xxxxxxxxxx" />
-                    
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                        <label>Status Pernikahan</label>
-                    <select name="status_pernikahan" class="form-control"><option> Pilih</option>
-                        <option name="status_pernikahan" value="Menikah"> Menikah </option>
-                        <option name="status_pernikahan" value="Belum Menikah"> Belum Menikah </option>
-                        <option name="status_pernikahan" value="Bercerai"> Bercerai </option>
-                    </select>
-                </td>
-            </div>
-        </tr>
-                </div>
-                <div class="form-group">
-                    <tr>
-                        <td>
-                             <label>Tanggal Lahir</label>
-                    <input type="date" name="tgl_lahir" class="form-control"/>
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                        <label>Kewarganegaraan</label>
-                    <input type="text" name="kewarganegaraan" class="form-control"/>
                 </td>
                 </div>
                 <td></td>
@@ -206,17 +193,6 @@
                     <button type="button" class="btn btn-next">Next</button>
                 </div>
             </fieldset>
-
-
-
-
-
-
-
-
-
-
-
  <fieldset>
                 <h3 align="center">Keluarga</h3>
                 <br>
@@ -291,16 +267,6 @@
             </table>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
     <div class="box box-solid box-primary">
 <div class="box-header">
 <h3 class="btn btn disabled box-title">
@@ -369,16 +335,6 @@
     </table>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 <div class="box box-solid box-primary">
 <div class="box-header">
 <h3 class="btn btn disabled box-title">
@@ -449,15 +405,6 @@ $(document).ready(function($){
 </script>
 </div>
 </div></div> 
-
-
-
-
-
-
-
-
-
 
 <div class="box box-solid box-primary">
 <div class="box-header">
@@ -530,10 +477,6 @@ while ($data = mysql_fetch_array($a)) { ?>
 </div>  
   </div>
 </div> 
-
-
-
-
 
 
 
@@ -694,11 +637,7 @@ while ($data = mysql_fetch_array($a)) { ?>
   <i class="fa fa-minus"></i></a>
     </div>
      <div class="box-body">
-<<<<<<< HEAD
                 <table border="0" width="1030">
-=======
-               <table border="0" width="1030">
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 <div class="form-group">
                     <tr>
                         <td>
@@ -709,11 +648,7 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="jenjang_pend_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="jenjang_pend_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="jenjang_pend_s2" class="form-control" placeholder="6." /> <br>
-<<<<<<< HEAD
                         </td>
-=======
-                </td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 </div>
                 <div class="form-group">
                     <td>
@@ -724,11 +659,7 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="thn_pend_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="thn_pend_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="thn_pend_s2" class="form-control" placeholder="6." /> <br>
-<<<<<<< HEAD
                     </td>
-=======
-                </td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 </div>
                 <div class="form-group">
                     <td>
@@ -739,11 +670,7 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="nm_univ_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="nm_univ_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="nm_univ_s2" class="form-control" placeholder="6." /> <br>
-<<<<<<< HEAD
                     </td>
-=======
-                </td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 </div>
                 <div class="form-group">
                     <td>
@@ -754,7 +681,6 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="lulus_thn_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="lulus_thn_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="lulus_thn_s2" class="form-control" placeholder="6." /> <br>
-<<<<<<< HEAD
                     </td>
                 </div></tr>
             </div>
@@ -765,38 +691,11 @@ while ($data = mysql_fetch_array($a)) { ?>
 <div class="box-header">
 <h3 class="btn btn disabled box-title">
 <i class="fa fa-user-md"></i> Kemampuan Bahasa Asing </h3>
-=======
-                </td>
-                </div>
-            </tr>
-        </div>
-    </table>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-                <div class="box box-solid box-primary">
-<div class="box-header">
-<h3 class="btn btn disabled box-title">
-<i class="fa fa-user-md"></i> Informasi Kemampuan Bahasa Asing </h3>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
   <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
   <i class="fa fa-minus"></i></a>
     </div>
      <div class="box-body">
-<<<<<<< HEAD
         <table border="0" width="1030">
-=======
-               <table border="0" width="1030">
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 <div class="form-group">
                     <tr>
                         <td>
@@ -804,11 +703,7 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="jns_bhs1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="jns_bhs2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="jns_bhs3" class="form-control" placeholder="3." /> <br>
-<<<<<<< HEAD
                         </td>
-=======
-                </td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 </div>
                 <div class="form-group">
                     <td>
@@ -816,29 +711,15 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="kem_dengar1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_dengar2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_dengar3" class="form-control" placeholder="3." /> <br>
-<<<<<<< HEAD
                     </td>
-=======
-                </td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 </div>
-            </tr>
                 <div class="form-group">
-<<<<<<< HEAD
                     <td>
-=======
-                    <tr>
-                        <td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                     <label>Kemampuan Membaca</label>
                     <input type="text" name="kem_baca1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_baca2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_baca3" class="form-control" placeholder="3." /> <br>
-<<<<<<< HEAD
                     </td>
-=======
-                </td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 </div>
                 <div class="form-group">
                     <td>
@@ -846,11 +727,7 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="kem_bicara1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_bicara2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_bicara3" class="form-control" placeholder="3." /> <br>
-<<<<<<< HEAD
                     </td>
-=======
-                </td>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 </div>
                 <div class="form-group">
                     <td>
@@ -858,7 +735,6 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <input type="text" name="kem_tulis1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_tulis2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_tulis3" class="form-control" placeholder="3." /> <br>
-<<<<<<< HEAD
                     </td>
                 </div>
             </tr>
@@ -877,28 +753,6 @@ while ($data = mysql_fetch_array($a)) { ?>
      <div class="box-body">
         <table border="0" width="1030">
             <tr>
-=======
-                </td>
-                </div>
-            </tr>
-        </div>
-    </div>
-</table>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-                <h4 align="center">Aktivitas Organisasi</h4>
-                <br>
->>>>>>> 968c41a6a89f57a022339e460cadc0d3eb7652da
                 <div class="form-group">
                     <td>
                     <label>Nama Organisasi</label>
@@ -1132,7 +986,6 @@ while ($data = mysql_fetch_array($a)) { ?>
                 </tr>
             </table>
         </div></div>
-        
         
                     <div class="form-group">
                         <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
