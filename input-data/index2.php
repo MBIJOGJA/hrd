@@ -388,8 +388,7 @@ $(document).ready(function($){
         var box_html = $('<div class="form-group"><label class="col-sm-3 control-label">Jenjang/Nama Sekolah </label><div><div class="col-sm-2"> <select name="jjg[]" class="form-control"><option value=""> Pilih Jenjang</option> <?php $q = mysql_query ("select * from jjg");while ($k = mysql_fetch_array($q)){ ?><option value="<?php echo $k['nm_jjg']; ?>" <?php (@$h['jjg']==$k['jjg'])?print(" "):print(""); ?> > <?php echo $k['nm_jjg']; ?></option> <?php  } ?>  </select></div><div class="col-sm-3"> <input type="text" class="form-control"  data-toggle="tooltip" title="Nama Sekolah" placeholder="Nama Sekolah" name="nm_jjg[]"> </div><div class="col-sm-3"> <div class="input-group">  <div class="input-group-addon">  <i class="fa fa-calendar"> </i>    </div>  <input type="text" class="form-control"   data-toggle="tooltip" title="Format: 2000-2006" maxlength="9" placeholder="Tahun"   name="thn_jjg[]"></div></div></div>  <a href="#" class="remove-box btn btn-danger btn-sm "><i class="fa fa-remove"> </i></a></div>');
         box_html.hide();
         $('.my-form p.text-box:last').after(box_html);
-        box_html.fadeIn('slow');
-        return false;
+           return false;
     });
     $('.my-form').on('click', '.remove-box', function(){
         $(this).parent().css( 'background-color', '#' );
@@ -420,7 +419,6 @@ $(document).ready(function($){
 // Tampilkan data dari Database
 $a = mysql_query("SELECT * FROM pengalaman_krj where nip='$_GET[nip]'");
 while ($data = mysql_fetch_array($a)) { ?>
-
 <div class="form-group">
     <label class="col-sm-1 control-label"></label>
     <div><div class="col-sm-4">
