@@ -305,238 +305,99 @@
   <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
   <i class="fa fa-minus"></i></a>
     </div>
-     <div class="box-body">
-                <table border="0" width="1030">
-                    <form action="action.php" method="POST">
-                <div class="form-group">
-                    <tr>
-                        <td>
-                    <label>Nama Saudara</label>
-                    <input type="text" name="nm_saudara1" class="form-control" placeholder="1. " /> <br>
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                    <label>Usia Saudara</label>
-                    <input type="text" name="usia_saudara1" class="form-control" placeholder="1. " /> <br>
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                    <label>Pendidikan Terakhir Saudara</label>
-                    <input type="text" name="pend_terakhir_saudara1" class="form-control" placeholder="1. " /> <br>
-                   
-                </td>
-                </div>
-                <div class="form-group">
-                    <td>
-                    <label>Pekerjaan Saudara</label>
-                    <input type="text" name="pekerjaan_saudara1" class="form-control" placeholder="1. " /> <br>
-                </td>
-                </div>
-            </tr>
-            <tr>
-                <td><center> <button class="btn btn-success add-more" type="button"><i class="glyphicon glyphicon-plus"></i> Tambah</button></td></center>
-            </tr>
-        </div>
-    </form>
-    <div class="copy hide">
-          <div class="control-group input-group" style="margin-top:10px">
-            <div class="input-group-btn"> 
-              <button class="btn btn-danger remove" type="button"><i class="glyphicon glyphicon-remove"></i> Hapus</button>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
-<script type="text/javascript">
-    $(document).ready(function() {
-      $(".add-more").click(function(){ 
-          var html = $(".copy").html();
-          $(".after-add-more").after(html);
-      });
-      $("body").on("click",".remove",function(){ 
-          $(this).parents(".control-group").remove();
-      });
-    });
-</script>
-</body>
-</html>
-    </table>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="box box-solid box-primary">
-<div class="box-header">
-<h3 class="btn btn disabled box-title">
-<i class="fa fa-mortar-board "></i> Informasi Pendidikan </h3>
-  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
-  <i class="fa fa-minus"></i>
-  </a></div>  
-  <div class="box-body" id="list_pendidikan">
-  <?php
-for ($i= 1; $i <= 3; $i++) { ?>
-<div class="form-group">
-    <label class="col-sm-3 control-label">Jenjang/Nama Sekolah </label>
-    <div><div class="col-sm-2">
-    <select name="jjg[]" class="form-control">
-  <option value=""> Pilih Jenjang</option>  
-<?php $q = mysql_query ("select * from jjg");
-while ($k = mysql_fetch_array($q)){ ?>
-<option value="<?php echo $k['nm_jjg']; ?>" 
-<?php (@$h['id']==$k['jjg'])?print(" "):print(""); ?>  > <?php echo $k['nm_jjg']; ?>
-</option> <?php } ?>
-  </select>
-  </div><div class="col-sm-3">
-  <input type="text" class="form-control"  data-toggle="tooltip" title="Nama Sekolah" placeholder="Nama Sekolah"   name="nm_jjg[]">
-  </div><div class="col-sm-3">
-    <div class="input-group"> <div class="input-group-addon">  <i class="fa fa-calendar"> </i>    </div>
-      <input type="text" class="form-control"   data-toggle="tooltip" maxlength="9" title="Format: 2000-2006" placeholder="Tahun"   name="thn_jjg[]">
-  </div><!-- /.input group -->
-  </div></div></div>
-<?php } ?>  
-<div class="form-group">
-<div id="main">
-    <div class="my-form">
-            <center>
-      <p class="text-box">
+     <div class="row-fluid">
+            <div class="span6">
+                <br>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th width="600px">Nama Saudara</th>
+                                <th width="600px">Usia Saudara</th>
+                                <th width="600px">Pendidikan akhir saudara</th>
+                                <th width="600px">Pekerjaan Saudara</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <!--elemet sebagai target append-->
+                        <tbody id="itemlist">
+                            <tr>
+                                <td><input name="nm_saudara[1]" class="input-block-level" /></td>
+                                <td><input name="usia_saudara[1]" class="input-block-level" /></td>
+                                <td><input name="pend_terakhir_saudara[1]" class="input-block-level" /></td>
+                                <td><input name="pekerjaan_saudara[1]" class="input-block-level" /></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-small btn-default" onclick="additem(); return false"><i class="icon-plus"></i>+Tambah</button></
+                                    <button name="submit" class="btn btn-small btn-primary"><i class="icon-ok"></i></button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+        <script>
+            var i = 1;
+            function additem() {
+//                menentukan target append
+                var itemlist = document.getElementById('itemlist');
                 
-            </p></center>
-    </div>
-    <center>
-    <a class="add-box btn btn-primary"" href="#" onclick=""> <i class="fa fa-plus"> </i> Tambah</a>
-    </center>
-</div>
-<script type="text/javascript">
-$(document).ready(function($){
-
-    $('.add-box').click(function(){
-        var n = $('.text-box').length + 1;
-        if( 5 < n ) {
-            alert('Stop it!');
-            return false;
-        }
-        var box_html = $('<div class="form-group"><label class="col-sm-3 control-label">Jenjang/Nama Sekolah </label><div><div class="col-sm-2"> <select name="jjg[]" class="form-control"><option value=""> Pilih Jenjang</option> <?php $q = mysql_query ("select * from jjg");while ($k = mysql_fetch_array($q)){ ?><option value="<?php echo $k['nm_jjg']; ?>" <?php (@$h['jjg']==$k['jjg'])?print(" "):print(""); ?> > <?php echo $k['nm_jjg']; ?></option> <?php  } ?>  </select></div><div class="col-sm-3"> <input type="text" class="form-control"  data-toggle="tooltip" title="Nama Sekolah" placeholder="Nama Sekolah" name="nm_jjg[]"> </div><div class="col-sm-3"> <div class="input-group">  <div class="input-group-addon">  <i class="fa fa-calendar"> </i>    </div>  <input type="text" class="form-control"   data-toggle="tooltip" title="Format: 2000-2006" maxlength="9" placeholder="Tahun"   name="thn_jjg[]"></div></div></div>  <a href="#" class="remove-box btn btn-danger btn-sm "><i class="fa fa-remove"> </i></a></div>');
-        box_html.hide();
-        $('.my-form p.text-box:last').after(box_html);
-        box_html.fadeIn('slow');
-        return false;
-    });
-    $('.my-form').on('click', '.remove-box', function(){
-        $(this).parent().css( 'background-color', '#' );
-        $(this).parent().fadeOut("slow", function() {
-            $(this).remove();
-            $('.box-number').each(function(index){
-                $(this).text( index + 1 );
-            });
-        });
-        return false;
-    });
-});
-</script>
-</div>
-</div></div> 
-
-
-
-
-
-
-
-
-
-
-
-<div class="box box-solid box-primary">
-<div class="box-header">
-<h3 class="btn btn disabled box-title">
-<i class="fa fa-puzzle-piece"></i> Pengalaman Pekerjaan </h3>
-  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
-  <i class="fa fa-minus"></i>
-  </a>
+//                membuat element
+                var row = document.createElement('tr');
+                var jenis1 = document.createElement('td');
+                var jenis2 = document.createElement('td');
+                var jenis3 = document.createElement('td');
+                var jenis4 = document.createElement('td');
+                var aksi = document.createElement('td');
  
-    </div>  
-  <div class="box-body">
-<?php 
-// Tampilkan data dari Database
-$a = mysql_query("SELECT * FROM pengalaman_krj where nip='$_GET[nip]'");
-while ($data = mysql_fetch_array($a)) { ?>
-
-<div class="form-group">
-    <label class="col-sm-1 control-label"></label>
-    <div><div class="col-sm-4">
-  <input type="text" class="form-control"  data-toggle="tooltip" value="<?php echo $data['nm_krj'];?>"   name="pekerjaan[]">
-  <input type="hidden" class="form-control"  value="<?php echo $data['id_peng_krj'];?>"   name="ids[]">
-  </div>
-  <div class="col-sm-3">
-  <input type="text" class="form-control"  data-toggle="tooltip" value="<?php echo $data['nm_pt'];?>"   name="nm_pt[]">
-  </div>
-  <div class="col-sm-3">
-    <div class="input-group"> <div class="input-group-addon">  <i class="fa fa-calendar"> </i>    </div>
-      <input type="text" class="form-control"   data-toggle="tooltip" maxlength="9"title="Format: 2000-2006" value="<?php echo $data['thn_krj'];?>"   name="thn_krj[]">
-  </div><!-- /.input group -->
-  </div></div>
-  <a class="hapus-box btn btn-danger btn-sm"   data-toggle="tooltip" title="Hapus Data" href="<?php echo $aksi ?>?module=pegawai&aksi=hapus_peng_krj&id_peng_krj=<?php echo $data['id_peng_krj'];?>"  alt="Delete Data" onclick="return confirm('ANDA YAKIN AKAN MENGHAPUS DATA <?php echo $Kode; ?>  ?')"> <i class="glyphicon glyphicon-trash"></i></a></div> 
-
-<?php } ?>
-  <div class="form-group">
-<div id="main">
-    <div class="form-ku">
-            <center>
-      <p class="text-itan">
-                <a class="ad-box btn btn-primary"" href="#"> <i class="fa fa-plus"> </i> Add More</a>
-            </p></center>
-    </div>
-</div>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.form-ku .ad-box').click(function(){
-        var n = $('.text-itan').length + 1;
-        if( 5 < n ) {
-            alert('Stop it!');
-            return false;
-        }
-        var box_html = $('<div class="form-group"> <label class="col-sm-1 control-label"></label>    <div><div class="col-sm-4">    <input type="text" class="form-control"  data-toggle="tooltip" title="Pekerjaan" placeholder="Pekerjaan" name="add_pekerjaan[]">  </div><div class="col-sm-3">  <input type="text" class="form-control"  data-toggle="tooltip" title="Nama Perusahaan" placeholder="Nama Perusahaan" name="add_nm_pt[]">  </div><div class="col-sm-3">    <div class="input-group"> <div class="input-group-addon">       <i class="fa fa-calendar"> </i>    </div>      <input type="text" class="form-control"   data-toggle="tooltip" title="Format: 2000-2006"maxlength="9" placeholder="Tahun" name="add_thn_krj[]"> </div>  </div></div>  <a href="#" class="hapus-box btn btn-danger btn-sm "><i class="fa fa-remove"> </i></a></div>');
-        box_html.hide();
-        $('.form-ku p.text-itan:last').after(box_html);
-        box_html.fadeIn('slow');
-        return false;
-    });
-    $('.form-ku').on('click', '.hapus-box', function(){
-        $(this).parent().css( 'background-color', '#' );
-        $(this).parent().fadeOut("slow", function() {
-            $(this).remove();
-            $('.box-number').each(function(index){
-                $(this).text( index + 1 );
-            });
-        });
-        return false;
-    });
-});
-
-</script>
-</div>  
-  </div>
-</div> 
+//                meng append element
+                itemlist.appendChild(row);
+                row.appendChild(jenis1);
+                 row.appendChild(jenis2);
+                  row.appendChild(jenis3);
+                row.appendChild(jenis4);
+                row.appendChild(aksi);
+ 
+//                membuat element input
+                var jenis_input1 = document.createElement('input');
+                jenis_input1.setAttribute('name', 'nm_saudara[' + i + ']');
+                jenis_input1.setAttribute('class', 'input-block-level');
+ 
+ var jenis_input2 = document.createElement('input');
+                jenis_input2.setAttribute('name', 'usia_saudara[' + i + ']');
+                jenis_input2.setAttribute('class', 'input-block-level');
+ 
+var jenis_input3 = document.createElement('input');
+                jenis_input3.setAttribute('name', 'pend_terakhir_saudara[' + i + ']');
+                jenis_input3.setAttribute('class', 'input-block-level');
+ 
 
 
-
-
-
-
-
-
-
+                var jenis_input4 = document.createElement('input');
+                jenis_input4.setAttribute('name', 'pekerjaan_saudara[' + i + ']');
+                jenis_input4.setAttribute('class', 'input-block-level');
+ 
+                var hapus = document.createElement('span');
+ 
+//                meng append element input
+                jenis1.appendChild(jenis_input1);
+                jenis2.appendChild(jenis_input2);
+                jenis3.appendChild(jenis_input3);
+                jenis4.appendChild(jenis_input4);
+                aksi.appendChild(hapus);
+ 
+                hapus.innerHTML = '<button class="btn btn-small btn-default"><i class="icon-trash"></i>Hapus</button>';
+//                membuat aksi delete element
+                hapus.onclick = function () {
+                    row.parentNode.removeChild(row);
+                };
+ 
+                i++;
+            }
+        </script>
+</div></div></div>
 
 <div class="box box-solid box-primary">
 <div class="box-header">
@@ -637,9 +498,6 @@ while ($data = mysql_fetch_array($a)) { ?>
                     <label>Usia Anak</label>
                     <input type="text" name="umur_anak1" class="form-control" placeholder="1."/><br>
                 </td>
-                <center>
-    <a class="add-box btn btn-primary"" href="#" onclick=""> <i class="fa fa-plus"> </i> Tambah</a>
-    </center>
                 <td>
                     <label>Usia Anak</label>
                     <input type="text" name="umur_anak2" class="form-control" placeholder="2."/><br>
