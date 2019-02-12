@@ -305,12 +305,11 @@
   <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
   <i class="fa fa-minus"></i></a>
     </div>
-     <div class="row-fluid">
-            <div class="span6">
-                <br>
-                    <table class="table table-condensed">
-                        <thead>
-                            <tr>
+     <div class="box-body">
+                <table border="0" width="1030">
+                    <form action="action.php" method="POST">
+                <div class="form-group">
+                    <tr>
                                 <th width="600px">Nama Saudara</th>
                                 <th width="600px">Usia Saudara</th>
                                 <th width="600px">Pendidikan akhir saudara</th>
@@ -338,6 +337,7 @@
                             </tr>
                         </tfoot>
                     </table>
+                </form>
         <script>
             var i = 1;
             function additem() {
@@ -397,7 +397,23 @@ var jenis_input3 = document.createElement('input');
                 i++;
             }
         </script>
-</div></div></div>
+</body>
+</html>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="box box-solid box-primary">
 <div class="box-header">
@@ -458,67 +474,94 @@ var jenis_input3 = document.createElement('input');
      <div class="box-body">
                <table border="0" width="1030">
                 <div class="form-group">
-                    <tr>
-                        <td>
-                    <label>Nama Anak</label>
-                        <input type="text" name="nm_anak1" class="form-control" placeholder="1."/> <br>
-                    </td>
-                    <div class="form-group">
-                        <td>
-                         <label>Nama Anak</label>
-                        <input type="text" name="nm_anak2" class="form-control" placeholder="2."/> <br>
-                    </td>
-                </div>
-            </tr>
-                    <div class="form-group">
-                        <tr>
-                            <td>
-                        <label>Jenis Kelamin Anak</label> <br>
-                        <input name="jk_anak1" class="minimal" type="radio" value="Laki-laki" checked> Laki-laki &nbsp;&nbsp;
-                        <input name="jk_anak1" class="minimal" type="radio" value="Perempuan"> Perempuan
-                        <input name="jk_anak1" class="minimal" type="radio" value="Tidak Ada"> Tidak ada
-                    </td>
-                    </div>
-                </div>
-                <br>
-                    <div class="form-group">
-                        <td>
-                        <label>Jenis Kelamin Anak</label> <br>
-                        <input name="jk_anak2" class="minimal" type="radio" value="Laki-laki" checked> Laki-laki &nbsp;&nbsp;
-                        <input name="jk_anak2" class="minimal" type="radio" value="Perempuan"> Perempuan
-                        <input name="jk_anak2" class="minimal" type="radio" value="Tidak Ada"> Tidak ada
-                    </td>
-                </div>
-            </tr>
-                    </div> 
-                </div>
-                <div class="form-group">
-                    <tr>
-                        <td>
-                    <label>Usia Anak</label>
-                    <input type="text" name="umur_anak1" class="form-control" placeholder="1."/><br>
-                </td>
-                <td>
-                    <label>Usia Anak</label>
-                    <input type="text" name="umur_anak2" class="form-control" placeholder="2."/><br>
-                </td>
-            </tr>
-                </div>
-                <div class="form-group">
-                    <tr>
-                        <td>
-                    <label>Pendidikan Terakhir Anak</label>
-                    <input type="text" name="pend_akhir_anak1" class="form-control" placeholder="1."/><br>
-                </td>
-                <td>
-                    <label>Pendidikan Terakhir Anak</label>
-                    <input type="text" name="pend_akhir_anak2" class="form-control" placeholder="2."/><br>
-                </td>
-            </tr>
-                </div>
-            </table>
-        </div>
-    </div>
+                     <tr>
+                                <th width="600px">Nama Anak</th>
+                                <th width="600px">Jenis Kelamin Anak</th>
+                                <th width="600px">Usia</th>
+                                <th width="600px">Pendidikan Akhir Anak</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <!--elemet sebagai target append-->
+                        <tbody id="itemlista">
+                            <tr>
+                                <td><input name="nm_anak[1]" class="input-block-level" /></td>
+                                <td><input type="radio" name="jk_anak[1]" class="input-block-level" value="" />Laki-Laki</td>
+                                <td><input name="usia_anak[1]" class="input-block-level" /></td>
+                                <td><input name="pend_akhir_anak[1]" class="input-block-level" /></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-small btn-defaulta" onclick="additema(); return false"><i class="icon-plus"></i>+Tambah</button></
+                                    <button name="submit" class="btn btn-small btn-primary"><i class="icon-ok"></i></button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+        <script>
+            var i = 1;
+            function additema() {
+//                menentukan target append
+                var itemlista = document.getElementById('itemlista');
+                
+//                membuat element
+                var rowa = document.createElement('tr');
+                var jenis1a = document.createElement('td');
+                var jenis2a = document.createElement('td');
+                var jenis3a = document.createElement('td');
+                var jenis4a = document.createElement('td');
+                var aksia = document.createElement('td');
+ 
+//                meng append element
+                itemlista.appendChild(rowa);
+                rowa.appendChild(jenis1a);
+                 rowa.appendChild(jenis2a);
+                  rowa.appendChild(jenis3a);
+                rowa.appendChild(jenis4a);
+                rowa.appendChild(aksia);
+ 
+//                membuat element input
+                var jenis_input1a = document.createElement('input');
+                jenis_input1a.setAttribute('name', 'nm_anak[' + i + ']');
+                jenis_input1a.setAttribute('class', 'input-block-level');
+ 
+ var jenis_input2a = document.createElement('input');
+                jenis_input2a.setAttribute('name', 'jk_anak[' + i + ']');
+                jenis_input2a.setAttribute('class', 'input-block-level');
+ 
+var jenis_input3a = document.createElement('input');
+                jenis_input3a.setAttribute('name', 'usia_anak[' + i + ']');
+                jenis_input3a.setAttribute('class', 'input-block-level');
+ 
+
+
+                var jenis_input4a = document.createElement('input');
+                jenis_input4a.setAttribute('name', 'pend_akhir_anak[' + i + ']');
+                jenis_input4a.setAttribute('class', 'input-block-level');
+ 
+                var hapusa = document.createElement('span');
+ 
+//                meng append element input
+                jenis1a.appendChild(jenis_input1a);
+                jenis2a.appendChild(jenis_input2a);
+                jenis3a.appendChild(jenis_input3a);
+                jenis4a.appendChild(jenis_input4a);
+                aksia.appendChild(hapusa);
+ 
+                hapusa.innerHTML = '<button class="btn btn-small btn-default"><i class="icon-trash"></i>Hapus</button>';
+//                membuat aksi delete element
+                hapusa.onclick = function () {
+                    rowa.parentNode.removeChild(rowa);
+                };
+ 
+                i++;
+            }
+        </script>
                 <div class="form-group">
                     <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 </div>
