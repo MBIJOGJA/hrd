@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
     <title>Form Wizard with jQuery and PHP</title>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/font-awesome.min.css" rel="stylesheet"/>
@@ -309,20 +308,20 @@
                 <table border="0" width="1030">
                 <div class="form-group">
                             <tr>
-                                <th width="600px">Nama Saudara</th>
-                                <th width="600px">Usia Saudara</th>
-                                <th width="600px">Pendidikan akhir saudara</th>
-                                <th width="600px">Pekerjaan Saudara</th>
+                                <th width="500px">Nama Saudara</th>
+                                <th width="500px">Usia Saudara</th>
+                                <th width="500px">Pendidikan akhir saudara</th>
+                                <th width="500px">Pekerjaan Saudara</th>
                                 <th></th>
                             </tr>
                         
                         <!--elemet sebagai target append-->
                         <tbody id="itemlist">
                             <tr>
-                                <td><input name="nm_saudara[1]" class="input-block-level" /></td>
-                                <td><input name="usia_saudara[1]" class="input-block-level" /></td>
-                                <td><input name="pend_terakhir_saudara[1]" class="input-block-level" /></td>
-                                <td><input name="pekerjaan_saudara[1]" class="input-block-level" /></td>
+                                <td><input name="nm_saudara[1]" class="form-control" /></td>
+                                <td><input name="usia_saudara[1]" class="form-control" /></td>
+                                <td><input name="pend_terakhir_saudara[1]" class="form-control" /></td>
+                                <td><input name="pekerjaan_saudara[1]" class="form-control" /></td>
                                 <td></td>
                             </tr>
                     
@@ -331,13 +330,13 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <button class="btn btn-small btn-default" onclick="additem(); return false"><i class="icon-plus"></i>+Tambah</button></
-                                    <button name="submit" class="btn btn-small btn-primary"><i class="icon-ok"></i></button></td>
+                                    <button class="add-box btn btn-primary" onclick="additem(); return false"><i class="fa fa-plus"></i>Tambah</button>
+                                </td>
                             </tr>
 
                    
         <script>
-            var i = 1;
+            var i = 2;
             function additem() {
 //                menentukan target append
                 var itemlist = document.getElementById('itemlist');
@@ -361,21 +360,21 @@
 //                membuat element input
                 var jenis_input1 = document.createElement('input');
                 jenis_input1.setAttribute('name', 'nm_saudara[' + i + ']');
-                jenis_input1.setAttribute('class', 'input-block-level');
+                jenis_input1.setAttribute('class', 'form-control');
  
  var jenis_input2 = document.createElement('input');
                 jenis_input2.setAttribute('name', 'usia_saudara[' + i + ']');
-                jenis_input2.setAttribute('class', 'input-block-level');
+                jenis_input2.setAttribute('class', 'form-control');
  
 var jenis_input3 = document.createElement('input');
                 jenis_input3.setAttribute('name', 'pend_terakhir_saudara[' + i + ']');
-                jenis_input3.setAttribute('class', 'input-block-level');
+                jenis_input3.setAttribute('class', 'form-control');
  
 
 
                 var jenis_input4 = document.createElement('input');
                 jenis_input4.setAttribute('name', 'pekerjaan_saudara[' + i + ']');
-                jenis_input4.setAttribute('class', 'input-block-level');
+                jenis_input4.setAttribute('class', 'form-control');
  
                 var hapus = document.createElement('span');
  
@@ -386,7 +385,7 @@ var jenis_input3 = document.createElement('input');
                 jenis4.appendChild(jenis_input4);
                 aksi.appendChild(hapus);
  
-                hapus.innerHTML = '<button class="btn btn-small btn-default"><i class="icon-trash"></i>Hapus</button>';
+                hapus.innerHTML = '<button class="add-box btn btn-primary""><i class="fa fa-plus"></i>Hapus</button>';
 //                membuat aksi delete element
                 hapus.onclick = function () {
                     row.parentNode.removeChild(row);
@@ -398,10 +397,6 @@ var jenis_input3 = document.createElement('input');
          </table>
 </div>
 </div>
-
-
-
-
 
 
 
@@ -512,9 +507,6 @@ var jenis_input3 = document.createElement('input');
                     <label>Usia Anak</label>
                     <input type="text" name="umur_anak1" class="form-control" placeholder="1."/><br>
                 </td>
-                <center>
-    <a class="add-box btn btn-primary"" href="#" onclick=""> <i class="fa fa-plus"> </i> Tambah</a>
-    </center>
                 <td>
                     <label>Usia Anak</label>
                     <input type="text" name="umur_anak2" class="form-control" placeholder="2."/><br>
@@ -770,6 +762,7 @@ var jenis_input3 = document.createElement('input');
                 </div>
             </tr>
         </table></div></div>
+
 
                 <div class="form-group">
                     <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
