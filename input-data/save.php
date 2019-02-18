@@ -254,7 +254,7 @@ if(isset($_POST['save'])){
     if (!$stat1 and !$stat2 and !$stat3 and !$stat4) {
         echo "Input Data Gagal";   
     }else{
-        header('Location: save.php');    
+        header('Location: index.html');    
     }
     
 }

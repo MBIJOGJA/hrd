@@ -124,10 +124,8 @@ iframe{
     padding-right: 5px;
     padding-bottom: 5px;
 }
-.ass{
-    width: 8000px;
-    height: 50px;
-    margin: 100px;
-    border: 20px solid #543535;
-    padding-right: 50px;
+.form-control{
+    width: 250px;
+    padding-right: 10px
+    height: 10px;
 }
