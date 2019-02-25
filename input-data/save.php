@@ -45,11 +45,20 @@ if($koneksi){
     
 //biodata
     $biodata=mysql_query("INSERT INTO biodata (nm_lengkap,jk,kewarganegaraan,alamat_sesuai_ktp,alamat_domisil,phone,tempat_lahir,tgl_lahir,agama,gol_darah,status_pernikahan,tinggi_bdn,berat_bdn,no_ktp,no_rek,nm_bank,nm_pemilik_rek) VALUES ('$nm_lengkap','$jk','$kewarganegaraan','$alamat_sesuai_ktp','$alamat_domisil','$phone','$tempat_lahir','$tgl_lahir','$agama','$gol_darah','$status_pernikahan','$tinggi_bdn','$berat_bdn','$no_ktp','$no_rek','$nm_bank','$nm_pemilik_rek')");
+
 //keluarga
     $datakeluarga=mysql_query("INSERT INTO datakeluarga (nm_ayah,usia_ayah,pend_terakhir_ayah,pekerjaan_ayah,nm_ibu,usia_ibu,pend_terakhir_ibu,pekerjaan_ibu,nm_si,usia_si,pend_si,kerja_si) VALUES ('$nm_ayah','$usia_ayah','$pend_terakhir_ayah','$pekerjaan_ayah','$nm_ibu','$usia_ibu','$pend_terakhir_ibu','$pekerjaan_ibu'$nm_si',$usia_si','$pend_si','$kerja_si')");
+    print_r($datakeluarga);
+    exit();
+    if ($datakeluarga) {
+        echo "<script>alert('simpan datakeluarga berhasil')</script>";
+        exit()      ;
+    }else{
+        echo "<script>alert('Gagal')</script>";
+    }
 
 //detaill keluarga
-$insert_keluarga = $_POST['keluarga'];
+$insert_keluarga = count($_POST['keluarga']);
 for ($i = 0; $i < $insert_keluarga; $i++) {
     $nm_saudara1 = $insert_keluarga['nm_saudara'][$i];
     $usia_saudara1 = $insert_keluarga['usia_saudara'][$i];
@@ -58,12 +67,13 @@ for ($i = 0; $i < $insert_keluarga; $i++) {
     $nm_anak = $insert_keluarga['nm_anak'][$i];
     $usia_anak = $insert_keluarga['usia_anak'][$i];
     $jeniskelamin = $insert_keluarga['jeniskelamin'][$i];
-    $detailkeluarga = mysql_query("INSERT INTO detailkeluarga (nm_saudara1,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1)
-        values('$nm_saudara','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')");
+    $detailkeluarga = mysql_query("INSERT INTO detailkeluarga (nm_saudara,usia_saudara1,pend_terakhir_saudara1, pekerjaan_saudara1,nm_anak,usia_anak,jk_anak)
+        values('$nm_saudara1','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')");
 }
-// 
-$insert_pend = $_POST['pend'];
-for ($j = 0; $j < $count; $j++) {
+
+//pendidikan 
+$insert_pend = count($_POST['pend']);
+for ($j = 0; $j < $insert_pend; $j++) {
     $jenjang_pend_sd = $insert_pend['jenjang_pend'][$j];
     $thn_pend_sd = $insert_pend['thn_pend'][$j];
     $nm_sklh_sd = $insert_pend['nm_sklh'][$j];
@@ -79,29 +89,29 @@ for ($j = 0; $j < $count; $j++) {
     $nm_pelatihan1 = $insert_pend['nm_pelatihan'][$j];
     $waktu_1 = $insert_pend['waktu'][$j];
     $penyelenggara1 = $insert_pend['penyelenggara'][$j];
-        $pendidikan1 = "INSERT INTO pendidikankegiatan (jenjang_pend_sd,thn_pend_sd,nm_sklh_sd,lulus_thn_sd,jns_bhs1,kem_dengar1,kem_baca1,kem_bicara1,kem_tulis1,nm_organisasi1,waktu1,jabatan1,nm_pelatihan1,waktu_1,penyelenggara1) 
-        values('$jenjang_pend_sd','$thn_pend_sd', '$nm_sklh_sd','$lulus_thn_sd','$jns_bhs1','$kem_dengar1', '$kem_baca1','$kem_bicara1','$kem_tulis1','$nm_organisasi1','$waktu1','$jabatan1','$nm_pelatihan1','$waktu_1','$penyelenggara1')";
+        $pendidikan = mysql_query("INSERT INTO pendidikankegiatan (jenjang_pend_sd,thn_pend_sd,nm_sklh_sd,lulus_thn_sd,jns_bhs1,kem_dengar1,kem_baca1,kem_bicara1,kem_tulis1,nm_organisasi1,waktu1,jabatan1,nm_pelatihan1,waktu_1,penyelenggara1) 
+        values('$jenjang_pend_sd','$thn_pend_sd','$nm_sklh_sd','$lulus_thn_sd','$jns_bhs1','$kem_dengar1', '$kem_baca1','$kem_bicara1','$kem_tulis1','$nm_organisasi1','$waktu1','$jabatan1','$nm_pelatihan1','$waktu_1','$penyelenggara1')");
 }
 
-$insert_lain = $_POST['lain'];
-for ($o = 0; $o < $count; $o++) {
-   $nm1 = $insert_lain['nm'][$o];
-   $hub1 = $insert_lain['hub'][$o];
+//info lain
+$insert_lain = count($_POST['lain']);
+for ($o = 0; $o < $insert_lain; $o++) {
+    $nm1 = $insert_lain['nm'][$o];
+    $hub1 = $insert_lain['hub'][$o];
     $no_telp1 =$insert_lain['no_telp'][$o];
     $alamat1 = $insert_lain['alamat'][$o];
-    $jns_penyakit1 = $insert_penyakit['jns_penyakit'][$p];
-    $wkt1 = $insert_penyakit['wkt'][$p];
-    $rs_kota1 = $insert_penyakit['rs_kota'][$p];
-     $nm_perusahaan1 = $insert_per['nm_perusahaan'][$q];
-    $periode_krj1 = $insert_per['periode_krj'][$q];
-    $posisi1 = $insert_per['posisi'][$q];
-    $gaji_akhir1 = $insert_per['gaji_akhir'][$q];
-
-$informasilainnya1 = "INSERT INTO informasilainnya (nm_1,hub1,no_telp1,alamat1,jns_penyakit1,wkt1,rs_kota1,nm_perusahaan1,periode_krj1,posisi1,gaji_akhir1) 
-        values('$nm1','$hub1','$no_telp1', '$alamat1','$jns_penyakit1','$wkt1','$rs_kota1','$nm_perusahaan1','$periode_krj1','$posisi1','$gaji_akhir1')";
+    $jns_penyakit1 = $insert_lain['jns_penyakit'][$o];
+    $wkt1 = $insert_lain['wkt'][$o];
+    $rs_kota1 = $insert_lain['rs_kota'][$o];
+    $nm_perusahaan1 = $insert_lain['nm_perusahaan'][$o];
+    $periode_krj1 = $insert_lain['periode_krj'][$o];
+    $posisi1 = $insert_lain['posisi'][$o];
+    $gaji_akhir1 = $insert_lain['gaji_akhir'][$o];
+    $informasilainnya = mysql_query("INSERT INTO informasilainnya (nm1,hub1,no_telp1,alamat1,jns_penyakit1,wkt1,rs_kota1,nm_perusahaan1,periode_krj1,posisi1,gaji_akhir1) 
+        values('$nm1','$hub1','$no_telp1', '$alamat1','$jns_penyakit1','$wkt1','$rs_kota1','$nm_perusahaan1','$periode_krj1','$posisi1','$gaji_akhir1')");
 
 }
-    if (!$simpan1 || !$simpan2 || !$simpan3 || !$simpan4 || !$simpan5 || !$simpan6 || !$simpan7 || !$simpan8 || !$simpan9 || !$simpan10 || !$simpan11 || !$simpan12) {
+    if (!$biodata || !$datakeluarga || !$detailkeluarga || !$pendidikan || !$informasilainnya) {
         echo "Input Data Gagal";   
     }else{
         header('Location: index.html');    

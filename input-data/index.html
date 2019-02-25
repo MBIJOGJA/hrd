@@ -305,7 +305,7 @@
                     <th>Pekerjaan Saudara</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="keluaraga[0][nm_saudara]" class="form-control" placeholder="Nama Saudara Anda" /></td>
+                    <td><input type="text" name="keluarga[0][nm_saudara]" class="form-control" placeholder="Nama Saudara Anda" /></td>
                     <td><input type="text" name="keluarga[0][usia_saudara]" class="form-control" placeholder="Usia Saudara Anda " /></td>
                     <td><input type="text" name="keluarga[0][pend_terkahir_saudara]" class="form-control" placeholder="Pendidikan Akhir Saudara Anda" /></td>
                     <td><input type="text" name="keluarga[0][pekerjaan_saudara]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td>
@@ -811,9 +811,9 @@ $(document).ready(function(){
                     <th>Rumah Sakit</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="penyakit_[0][jns_penyakit]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td>
-                    <td><input type="text" name="penyakit_[0][wkt]" class="form-control" placeholder="Waktu Menderita" /></td>
-                    <td><input type="text" name="penyakit_[0][rs_kota]" class="form-control" placeholder="Nama Rumah Sakit" /></td>
+                    <td><input type="text" name="lain[0][jns_penyakit]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td>
+                    <td><input type="text" name="lain[0][wkt]" class="form-control" placeholder="Waktu Menderita" /></td>
+                    <td><input type="text" name="lain[0][rs_kota]" class="form-control" placeholder="Nama Rumah Sakit" /></td>
                     <td><button type="button" name="add8" id="add8" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -824,7 +824,7 @@ $(document).ready(function(){
     var p=1;
     $('#add8').click(function(){
         p++;
-        $('#dynamic_field8').append('<tr id="row8'+p+'"><td><input type="text" name="penyakit_['+p+'][jns_penyakit]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td><td><input type="text" name="penyakit_['+p+'][wkt]" class="form-control" placeholder="Waktu Menderita" /></td><td><input type="text" name="penyakit_['+p+'][rs_kota]" class="form-control" placeholder="Nama Rumah Sakit" /></td><td><button type="button" name="remove8" id="'+p+'" class="btn btn-danger btn_remove8">X</button></td></tr>');
+        $('#dynamic_field8').append('<tr id="row8'+p+'"><td><input type="text" name="lain['+p+'][jns_penyakit]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td><td><input type="text" name="lain['+p+'][wkt]" class="form-control" placeholder="Waktu Menderita" /></td><td><input type="text" name="lain['+p+'][rs_kota]" class="form-control" placeholder="Nama Rumah Sakit" /></td><td><button type="button" name="remove8" id="'+p+'" class="btn btn-danger btn_remove8">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove8', function(){
@@ -872,10 +872,10 @@ $(document).ready(function(){
                     <th>Gaji Akhir</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="per_[0][nm_perusahaan]" class="form-control" placeholder="Nama Perusahaan" /></td>
-                    <td><input type="text" name="per_[0][periode_krj]" class="form-control" placeholder="Periode Kerja" /></td>
-                    <td><input type="text" name="per_[0][posisi]" class="form-control" placeholder="Posisi" /></td>
-                    <td><input type="text" name="per_[0][gaji_akhir]" class="form-control" placeholder="Gaji Akhir" /></td>
+                    <td><input type="text" name="lain[0][nm_perusahaan]" class="form-control" placeholder="Nama Perusahaan" /></td>
+                    <td><input type="text" name="lain[0][periode_krj]" class="form-control" placeholder="Periode Kerja" /></td>
+                    <td><input type="text" name="lain[0][posisi]" class="form-control" placeholder="Posisi" /></td>
+                    <td><input type="text" name="lain[0][gaji_akhir]" class="form-control" placeholder="Gaji Akhir" /></td>
                     <td><button type="button" name="add9" id="add9" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -886,7 +886,7 @@ $(document).ready(function(){
     var q=1;
     $('#add9').click(function(){
         q++;
-        $('#dynamic_field9').append('<tr id="row9'+q+'"><td><input type="text" name="per_['+q+'][nm_perusahaan]" class="form-control" placeholder="Nama Perusahaan" /></td><td><input type="text" name="per_['+q+'][periode_krj]" class="form-control" placeholder="Periode Kerja" /></td><td><input type="text" name="per_['+q+'][posisi]" class="form-control" placeholder="Posisi" /></td><td><input type="text" name="per_['+q+'][gaji_akhir]" class="form-control" placeholder="Gaji Akhir" /></td><td><button type="button" name="remove9" id="'+q+'" class="btn btn-danger btn_remove9">X</button></td></tr>');
+        $('#dynamic_field9').append('<tr id="row9'+q+'"><td><input type="text" name="lain['+q+'][nm_perusahaan]" class="form-control" placeholder="Nama Perusahaan" /></td><td><input type="text" name="lain['+q+'][periode_krj]" class="form-control" placeholder="Periode Kerja" /></td><td><input type="text" name="lain['+q+'][posisi]" class="form-control" placeholder="Posisi" /></td><td><input type="text" name="lain['+q+'][gaji_akhir]" class="form-control" placeholder="Gaji Akhir" /></td><td><button type="button" name="remove9" id="'+q+'" class="btn btn-danger btn_remove9">X</button></td></tr>');
     });
      
     $(document).on('click', '.btn_remove9', function(){
