@@ -305,10 +305,10 @@
                     <th>Pekerjaan Saudara</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="nm_saudara[]" class="form-control" placeholder="Nama Saudara Anda" /></td>
-                    <td><input type="text" name="usia_saudara[]" class="form-control" placeholder="Usia Saudara Anda " /></td>
-                    <td><input type="text" name="pend_terkahir_saudara[]" class="form-control" placeholder="Pendidikan Akhir Saudara Anda" /></td>
-                    <td><input type="text" name="pekerjaan_saudara[]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td>
+                    <td><input type="text" name="keluaraga[0][nm_saudara]" class="form-control" placeholder="Nama Saudara Anda" /></td>
+                    <td><input type="text" name="keluarga[0][usia_saudara]" class="form-control" placeholder="Usia Saudara Anda " /></td>
+                    <td><input type="text" name="keluarga[0][pend_terkahir_saudara]" class="form-control" placeholder="Pendidikan Akhir Saudara Anda" /></td>
+                    <td><input type="text" name="keluarga[0][pekerjaan_saudara]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td>
                     <td><button type="button" name="add1" id="add1" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -319,7 +319,7 @@ $(document).ready(function(){
     var i=1;
     $('#add1').click(function(){
         i++;
-        $('#dynamic_field1').append('<tr id="row1'+i+'"><td><input type="text" name="nm_saudara[]" class="form-control" placeholder="Nama Suadara Anda " /></td><td><input type="text" name="usia_saudara[]" class="form-control" placeholder="Usia Saudara Anda" /></td><td><input type="text" name="pend_terkahir_saudara[]" class="form-control" placeholder="Pendidikan Saudara Anda" /></td><td><input type="text" name="pekerjaan_saudara[]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td><td><button type="button" name="remove1" id="'+i+'" class="btn btn-danger btn_remove1">X</button></td></tr>');
+        $('#dynamic_field1').append('<tr id="row1'+i+'"><td><input type="text" name="keluarga['+i+'][nm_saudara]" class="form-control" placeholder="Nama Suadara Anda " /></td><td><input type="text" name="keluarga['+i+'][usia_saudara]" class="form-control" placeholder="Usia Saudara Anda" /></td><td><input type="text" name="keluarga['+i+'][pend_terkahir_saudar]" class="form-control" placeholder="Pendidikan Saudara Anda" /></td><td><input type="text" name="keluarga['+i+'][pekerjaan_saudara]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td><td><button type="button" name="remove1" id="'+i+'" class="btn btn-danger btn_remove1">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove1', function(){
@@ -412,11 +412,11 @@ $(document).ready(function(){
                     <th>Jenis Kelamin</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="nm_anak[]" class="form-control" placeholder="Nama Anak" /></td>
-                    <td><input type="text" name="usia_anak[]" class="form-control" placeholder="Usia Anak" /></td><td>
-                        <select name="agama" class="form-control"><option> Pilih</option>
-                            <option name="jeniskelamin" value="Laki-Laki"> Laki-Laki </option>
-                            <option name="jeniskelamin" value="Perempuan"> Perempuan </option>
+                    <td><input type="text" name="keluarga[0][nm_anak]" class="form-control" placeholder="Nama Anak" /></td>
+                    <td><input type="text" name="keluarga[0][usia_anak]" class="form-control" placeholder="Usia Anak" /></td><td>
+                        <select name="keluarga[0][jeniskelamin]" class="form-control"><option> Pilih</option>
+                            <option  value="Laki-Laki"> Laki-Laki </option>
+                            <option  value="Perempuan"> Perempuan </option>
                     </select></td>
                     <td><button type="button" name="add2" id="add2" class="btn btn-success">+</button></td>
                 </table>   
@@ -425,10 +425,10 @@ $(document).ready(function(){
 
 <script>
 $(document).ready(function(){
-    var i=1;
+    var j=1;
     $('#add2').click(function(){
-        i++;
-        $('#dynamic_field2').append('<tr id="row2'+i+'"><td><input type="text" name="nm_anak[]" class="form-control" placeholder="Nama Anak" /></td><td><input type="text" name="usia_anak[]" class="form-control" placeholder="Usia Anak" /></td><td><select name="agama" class="form-control"><option> Pilih</option><option name="jeniskelamin" value="Laki-Laki"> Laki-Laki </option><option name="jeniskelamin" value="Perempuan"> Perempuan </option></select></td><td><button type="button" name="remove2" id="'+i+'" class="btn btn-danger btn_remove2">X</button></td></tr>');
+        j++;
+        $('#dynamic_field2').append('<tr id="row2'+j+'"><td><input type="text" name="keluarga['+j+'][nm_anak]" class="form-control" placeholder="Nama Anak" /></td><td><input type="text" name="keluarga['+j+'][usia_anak]" class="form-control" placeholder="Usia Anak" /></td><td><select name="jeniskelamin" class="form-control"><option> Pilih</option><option name="jeniskelamin" value="Laki-Laki"> Laki-Laki </option><option name="jeniskelamin" value="Perempuan"> Perempuan </option></select></td><td><button type="button" name="remove2" id="'+j+'" class="btn btn-danger btn_remove2">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove2', function(){
@@ -490,20 +490,20 @@ $(document).ready(function(){
                     <th>Tahun Lulus</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="jenjang_pend[]" class="form-control" placeholder="Jenjang Pendidikan" /></td>
-                    <td><input type="text" name="thn_pend[]" class="form-control" placeholder="Tahun Pendidikan" /></td>
-                    <td><input type="text" name="nm_sklh" class="form-control" placeholder="Nama Sekolah" /></td>
-                    <td><input type="text" name="lulus_thn" class="form-control" placeholder="Lulus Tahun" /></td>
+                    <td><input type="text" name="pend[0][jenjang_pend]" class="form-control" placeholder="Jenjang Pendidikan" /></td>
+                    <td><input type="text" name="pend[0][thn_pend]" class="form-control" placeholder="Tahun Pendidikan" /></td>
+                    <td><input type="text" name="pend[0][nm_sklh]" class="form-control" placeholder="Nama Sekolah" /></td>
+                    <td><input type="text" name="pend[0][lulus_thn]" class="form-control" placeholder="Lulus Tahun" /></td>
                     <td><button type="button" name="add3" id="add3" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
                 </div>
 <script>
 $(document).ready(function(){
-    var i=1;
+    var k=1;
     $('#add3').click(function(){
-        i++;
-        $('#dynamic_field3').append('<tr id="row3'+i+'"><td><input type="text" name="jenjang_pend[]" class="form-control" placeholder="Jenjang Pendidikan" /></td><td><input type="text" name="thn_pend[]" class="form-control" placeholder="Tahun Pendidikan" /></td><td><input type="text" name="nm_sklh" class="form-control" placeholder="Nama Sekolah" /></td><td><input type="text" name="lulus_thn" class="form-control" placeholder="Lulus Tahun" /></td><td><button type="button" name="remove3" id="'+i+'" class="btn btn-danger btn_remove3">X</button></td></tr>');
+        k++;
+        $('#dynamic_field3').append('<tr id="row3'+k+'"><td><input type="text" name="pend['+k+'][jenjang_pend]" class="form-control" placeholder="Jenjang Pendidikan" /></td><td><input type="text" name="pend['+k+'][thn_pend]" class="form-control" placeholder="Tahun Pendidikan" /></td><td><input type="text" name="pend['+k+'][nm_sklh]" class="form-control" placeholder="Nama Sekolah" /></td><td><input type="text" name="pend['+k+'][lulus_thn]" class="form-control" placeholder="Lulus Tahun" /></td><td><button type="button" name="remove3" id="'+k+'" class="btn btn-danger btn_remove3">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove3', function(){
@@ -548,25 +548,25 @@ $(document).ready(function(){
                     <th>Jenis Bahasa</th>
                     <th>Kemampuan Dengar</th>
                     <th>Kemampuan Baca</th>
-                     <th>Kemampuan Bicara</th>
+                    <th>Kemampuan Bicara</th>
                     <th>Kemampuan Tulis</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="jns_bhs[]" class="form-control" placeholder="Bahasa Yang Anda Kuasai" /></td>
-                    <td><input type="text" name="kem_dengar[]" class="form-control" placeholder="Kemampuan dengar bahasa asing" /></td>
-                    <td><input type="text" name="kem_baca" class="form-control" placeholder="Kemampuan Membaca Bahasa Asing" /></td>
+                    <td><input type="text" name="pend[0][jns_bhs]" class="form-control" placeholder="Bahasa Yang Anda Kuasai" /></td>
+                    <td><input type="text" name="pend[0][kem_dengar]" class="form-control" placeholder="Kemampuan dengar bahasa asing" /></td>
+                    <td><input type="text" name="pend[0][kem_baca]" class="form-control" placeholder="Kemampuan Membaca Bahasa Asing" /></td>
                     
-                     <td><input type="text" name="kem_bicara" class="form-control" placeholder="Kemampuan Bicara bahasa asing" /></td>
-                    <td><input type="text" name="kem_baca" class="form-control" placeholder="Kemampuan Baca bahasa asing" /></td>
+                     <td><input type="text" name="pend[0][kem_bicara]" class="form-control" placeholder="Kemampuan Bicara bahasa asing" /></td>
+                    <td><input type="text" name="pend[0][kem_tulis]" class="form-control" placeholder="Kemampuan Baca bahasa asing" /></td>
                     <td><button type="button" name="add4" id="add4" class="btn btn-success">+</button></td>
                 </tr>
             </table>
 <script>
 $(document).ready(function(){
-    var i=1;
+    var l=1;
     $('#add4').click(function(){
-        i++;
-        $('#dynamic_field4').append('<tr id="row4'+i+'"><td><input type="text" name="jns_bhs[]" class="form-control" placeholder="Bahasa Yang Anda Kuasai" /></td><td><input type="text" name="kem_dengar[]" class="form-control" placeholder="Kemampuan dengar bahasa asing" /></td><td><input type="text" name="kem_baca" class="form-control" placeholder="Kemampuan Membaca Bahasa Asing" /></td><td><input type="text" name="kem_bicara" class="form-control" placeholder="Kemampuan Bicara bahasa asing" /></td><td><input type="text" name="kem_baca" class="form-control" placeholder="Kemampuan Baca bahasa asing" /></td><td><button type="button" name="remove4" id="'+i+'" class="btn btn-danger btn_remove4">X</button></td></tr>');
+        l++;
+        $('#dynamic_field4').append('<tr id="row4'+l+'"><td><input type="text" name="pend['+l+'][jns_bhs]" class="form-control" placeholder="Bahasa Yang Anda Kuasai" /></td><td><input type="text" name="pend['+l+'][kem_dengar]" class="form-control" placeholder="Kemampuan dengar bahasa asing" /></td><td><input type="text" name="pend['+l+'][kem_baca]" class="form-control" placeholder="Kemampuan Membaca Bahasa Asing" /></td><td><input type="text" name="pend['+l+'][kem_bicara]" class="form-control" placeholder="Kemampuan Bicara bahasa asing" /></td><td><input type="text" name="pend['+i+'][kem_baca]" class="form-control" placeholder="Kemampuan Baca bahasa asing" /></td><td><button type="button" name="remove4" id="'+l+'" class="btn btn-danger btn_remove4">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove4', function(){
@@ -611,9 +611,9 @@ $(document).ready(function(){
                     <th>Jabatan Anda</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="nm_organisasi[]" class="form-control" placeholder="Nama Organisasi" /></td>
-                    <td><input type="text" name="waktu[]" class="form-control" placeholder="Waktu Anda Bergabung" /></td>
-                    <td><input type="text" name="jabatan[]" class="form-control" placeholder="Jabatan Anda" /></td>
+                    <td><input type="text" name="pend[0][nm_organisasi]" class="form-control" placeholder="Nama Organisasi" /></td>
+                    <td><input type="text" name="pend[0][waktu]" class="form-control" placeholder="Waktu Anda Bergabung" /></td>
+                    <td><input type="text" name="pend[0][jabatan]" class="form-control" placeholder="Jabatan Anda" /></td>
                     <td><button type="button" name="add5" id="add5" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -621,10 +621,10 @@ $(document).ready(function(){
                 
 <script>
 $(document).ready(function(){
-    var i=1;
+    var m=1;
     $('#add5').click(function(){
-        i++;
-        $('#dynamic_field5').append('<tr id="row5'+i+'"><td><input type="text" name="nm_organisasi[]" class="form-control" placeholder="Nama Organisasi" /></td><td><input type="text" name="waktu[]" class="form-control" placeholder="Waktu Anda Bergabung" /></td><td><input type="text" name="jabatan[]" class="form-control" placeholder="Jabatan Anda" /></td><td><button type="button" name="remove5" id="'+i+'" class="btn btn-danger btn_remove5">X</button></td></tr>');
+        m++;
+        $('#dynamic_field5').append('<tr id="row5'+m+'"><td><input type="text" name="pend['+m+'][nm_organisasi]" class="form-control" placeholder="Nama Organisasi" /></td><td><input type="text" pend['+m+'][waktu]" class="form-control" placeholder="Waktu Anda Bergabung" /></td><td><input type="text" pend['+m+'][jabatan]" class="form-control" placeholder="Jabatan Anda" /></td><td><button type="button" name="remove5" id="'+m+'" class="btn btn-danger btn_remove5">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove5', function(){
@@ -666,14 +666,14 @@ $(document).ready(function(){
                 <div class="table-responsive">
                 <table class="table table-bordered" id="dynamic_field6">
                 <tr>
-                    <th>Topik Pelatihan</th>
+                    <th>Nama Kursus</th>
                     <th>Waktu</th>
                     <th>Penyelenggara</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="nm_pelatihan[]" class="form-control" placeholder="Nama Organisasi" /></td>
-                    <td><input type="text" name="waktu_krs[]" class="form-control" placeholder="Waktu Kursus" /></td>
-                    <td><input type="text" name="penyelenggara[]" class="form-control" placeholder="Penyelenggara" /></td>
+                    <td><input type="text" name="pend[0][nm_pelatihan]" class="form-control" placeholder="Nama Organisasi" /></td>
+                    <td><input type="text" name="pend[0][waktu_krs]" class="form-control" placeholder="Waktu Kursus" /></td>
+                    <td><input type="text" name="pend[0][penyelenggara]" class="form-control" placeholder="Penyelenggara" /></td>
                     <td><button type="button" name="add6" id="add6" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -681,10 +681,10 @@ $(document).ready(function(){
                 
 <script>
 $(document).ready(function(){
-    var i=1;
+    var n=1;
     $('#add6').click(function(){
-        i++;
-        $('#dynamic_field6').append('<tr id="row6'+i+'"><td><input type="text" name="nm_pelatihan[]" class="form-control" placeholder="Nama Organisasi" /></td><td><input type="text" name="waktu_krs[]" class="form-control" placeholder="Waktu Kursus" /></td><td><input type="text" name="penyelenggara[]" class="form-control" placeholder="Penyelenggara" /></td><td><button type="button" name="remove6" id="'+i+'" class="btn btn-danger btn_remove6">X</button></td></tr>');
+        n++;
+        $('#dynamic_field6').append('<tr id="row6'+n+'"><td><input type="text" name="pend['+n+'][nm_pelatihan]" class="form-control" placeholder="Nama Organisasi" /></td><td><input type="text" name="pend['+n+'][waktu_krs]" class="form-control" placeholder="Waktu Kursus" /></td><td><input type="text" name="pend['+n+'][penyelenggara]" class="form-control" placeholder="Penyelenggara" /></td><td><button type="button" name="remove6" id="'+n+'" class="btn btn-danger btn_remove6">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove6', function(){
@@ -747,10 +747,10 @@ $(document).ready(function(){
                     <th>Alamat</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="nm[]" class="form-control" placeholder="Nama Saudara" /></td>
-                    <td><input type="text" name="hub[]" class="form-control" placeholder="Hubungan" /></td>
-                    <td><input type="text" name="no_telp[]" class="form-control" placeholder="08xxxxxxxxxx" /></td>
-                    <td><input type="text" name="alamat[]" class="form-control" placeholder="Alamat saudara" /></td>
+                    <td><input type="text" name="lain[0][nm]" class="form-control" placeholder="Nama Saudara" /></td>
+                    <td><input type="text" name="lain[0][hub]" class="form-control" placeholder="Hubungan" /></td>
+                    <td><input type="text" name="lain[0][no_telp]" class="form-control" placeholder="08xxxxxxxxxx" /></td>
+                    <td><input type="text" name="lain[0][alamat]" class="form-control" placeholder="Alamat saudara" /></td>
                     <td><button type="button" name="add7" id="add7" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -758,10 +758,10 @@ $(document).ready(function(){
                 
 <script>
 $(document).ready(function(){
-    var i=1;
+    var o=1;
     $('#add7').click(function(){
-        i++;
-        $('#dynamic_field7').append('<tr id="row7'+i+'"><td><input type="text" name="nm[]" class="form-control" placeholder="Nama Saudara" /></td><td><input type="text" name="hub[]" class="form-control" placeholder="Hubungan" /></td><td><input type="text" name="no_telp[]" class="form-control" placeholder="08xxxxxxxxxx" /></td><td><input type="text" name="alamat[]" class="form-control" placeholder="Alamat saudara" /></td><td><button type="button" name="remove7" id="'+i+'" class="btn btn-danger btn_remove7">X</button></td></tr>');
+        o++;
+        $('#dynamic_field7').append('<tr id="row7'+o+'"><td><input type="text" name="lain['+o+'][nm]" class="form-control" placeholder="Nama Saudara" /></td><td><input type="text" name="lain['+o+'][hub]" class="form-control" placeholder="Hubungan" /></td><td><input type="text" name="lain['+o+'][no_telp]" class="form-control" placeholder="08xxxxxxxxxx" /></td><td><input type="text" name="lain['+o+'][alamat]" class="form-control" placeholder="Alamat saudara" /></td><td><button type="button" name="remove7" id="'+o+'" class="btn btn-danger btn_remove7">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove7', function(){
@@ -811,9 +811,9 @@ $(document).ready(function(){
                     <th>Rumah Sakit</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="jns_penyakit[]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td>
-                    <td><input type="text" name="wkt[]" class="form-control" placeholder="Waktu Menderita" /></td>
-                    <td><input type="text" name="rs_kota[]" class="form-control" placeholder="Nama Rumah Sakit" /></td>
+                    <td><input type="text" name="penyakit_[0][jns_penyakit]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td>
+                    <td><input type="text" name="penyakit_[0][wkt]" class="form-control" placeholder="Waktu Menderita" /></td>
+                    <td><input type="text" name="penyakit_[0][rs_kota]" class="form-control" placeholder="Nama Rumah Sakit" /></td>
                     <td><button type="button" name="add8" id="add8" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -821,10 +821,10 @@ $(document).ready(function(){
                 
 <script>
 $(document).ready(function(){
-    var i=1;
+    var p=1;
     $('#add8').click(function(){
-        i++;
-        $('#dynamic_field8').append('<tr id="row8'+i+'"><td><input type="text" name="jns_penyakit[]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td><td><input type="text" name="wkt[]" class="form-control" placeholder="Waktu Menderita" /></td><td><input type="text" name="rs_kota[]" class="form-control" placeholder="Nama Rumah Sakit" /></td><td><button type="button" name="remove8" id="'+i+'" class="btn btn-danger btn_remove8">X</button></td></tr>');
+        p++;
+        $('#dynamic_field8').append('<tr id="row8'+p+'"><td><input type="text" name="penyakit_['+p+'][jns_penyakit]" class="form-control" placeholder="Penyakit yang pernah diderita" /></td><td><input type="text" name="penyakit_['+p+'][wkt]" class="form-control" placeholder="Waktu Menderita" /></td><td><input type="text" name="penyakit_['+p+'][rs_kota]" class="form-control" placeholder="Nama Rumah Sakit" /></td><td><button type="button" name="remove8" id="'+p+'" class="btn btn-danger btn_remove8">X</button></td></tr>');
     });
     
     $(document).on('click', '.btn_remove8', function(){
@@ -872,10 +872,10 @@ $(document).ready(function(){
                     <th>Gaji Akhir</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="nm_perusahaan[]" class="form-control" placeholder="Nama Perusahaan" /></td>
-                    <td><input type="text" name="periode_krj[]" class="form-control" placeholder="Periode Kerja" /></td>
-                    <td><input type="text" name="posisi[]" class="form-control" placeholder="Posisi" /></td>
-                    <td><input type="text" name="gaji_akhir[]" class="form-control" placeholder="Gaji Akhir" /></td>
+                    <td><input type="text" name="per_[0][nm_perusahaan]" class="form-control" placeholder="Nama Perusahaan" /></td>
+                    <td><input type="text" name="per_[0][periode_krj]" class="form-control" placeholder="Periode Kerja" /></td>
+                    <td><input type="text" name="per_[0][posisi]" class="form-control" placeholder="Posisi" /></td>
+                    <td><input type="text" name="per_[0][gaji_akhir]" class="form-control" placeholder="Gaji Akhir" /></td>
                     <td><button type="button" name="add9" id="add9" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -883,10 +883,10 @@ $(document).ready(function(){
                 
 <script>
 $(document).ready(function(){
-    var i=1;
+    var q=1;
     $('#add9').click(function(){
-        i++;
-        $('#dynamic_field9').append('<tr id="row9'+i+'"><td><input type="text" name="nm_perusahaan[]" class="form-control" placeholder="Nama Perusahaan" /></td><td><input type="text" name="periode_krj[]" class="form-control" placeholder="Periode Kerja" /></td><td><input type="text" name="posisi[]" class="form-control" placeholder="Posisi" /></td><td><input type="text" name="gaji_akhir[]" class="form-control" placeholder="Gaji Akhir" /></td><td><button type="button" name="remove9" id="'+i+'" class="btn btn-danger btn_remove9">X</button></td></tr>');
+        q++;
+        $('#dynamic_field9').append('<tr id="row9'+q+'"><td><input type="text" name="per_['+q+'][nm_perusahaan]" class="form-control" placeholder="Nama Perusahaan" /></td><td><input type="text" name="per_['+q+'][periode_krj]" class="form-control" placeholder="Periode Kerja" /></td><td><input type="text" name="per_['+q+'][posisi]" class="form-control" placeholder="Posisi" /></td><td><input type="text" name="per_['+q+'][gaji_akhir]" class="form-control" placeholder="Gaji Akhir" /></td><td><button type="button" name="remove9" id="'+q+'" class="btn btn-danger btn_remove9">X</button></td></tr>');
     });
      
     $(document).on('click', '.btn_remove9', function(){
