@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 28, 2019 at 03:55 AM
+-- Generation Time: Feb 25, 2019 at 01:57 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -55,7 +55,7 @@ INSERT INTO `absen` (`id_absen`, `nip`, `id_shift`, `tanggal`, `jam_masuk`, `jam
 CREATE TABLE `biodata` (
   `id` varchar(100) NOT NULL,
   `nm_lengkap` varchar(100) DEFAULT NULL,
-  `jk` enum('Laki-laki','Perempuan') DEFAULT NULL,
+  `jeniskelamin` enum('Laki-laki','Perempuan') DEFAULT NULL,
   `kewarganegaraan` varchar(100) DEFAULT NULL,
   `alamat_sesuai_ktp` text,
   `alamat_domisil` text,
@@ -72,6 +72,36 @@ CREATE TABLE `biodata` (
   `nm_bank` varchar(100) DEFAULT NULL,
   `nm_pemilik_rek` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `biodata`
+--
+
+INSERT INTO `biodata` (`id`, `nm_lengkap`, `jeniskelamin`, `kewarganegaraan`, `alamat_sesuai_ktp`, `alamat_domisil`, `phone`, `tempat_lahir`, `tgl_lahir`, `agama`, `gol_darah`, `status_pernikahan`, `tinggi_bdn`, `berat_bdn`, `no_ktp`, `no_rek`, `nm_bank`, `nm_pemilik_rek`) VALUES
+('', 'Aldo S', '', 'Indo', 'Sanden', 'MGL', '085999888777', 'Purwodadis', '2002-06-07', 'Pilih', '-', 'Belum Menikah', 174, 58, '-', '-', '-', '-'),
+('5c5a5991ce53c', '-', 'Laki-laki', '-', '-', '-', '-', '-', '2002-06-07', 'Islam', '-', 'Belum Menikah', 0, 0, '-', '-', '-', '-'),
+('5c5b9ea29d30b', 'Anwar Saefudin Yuri', 'Laki-laki', 'Indonesia', 'Paten Jurang RT5 RW 15 Magelang', 'Magelang', '085887763563', 'Magelang', '2002-06-07', 'Islam', '-', 'Belum Menikah', 172, 62, '-', '-', '-', '-'),
+('5c5b9f86988fb', 'Anwar Saefudin Yuri', 'Laki-laki', 'Indonesia', 'Paten Jurang RT5 RW 15 Magelang', 'Magelang', '085887763563', 'Magelang', '2002-06-07', 'Islam', '-', 'Belum Menikah', 172, 62, '-', '-', '-', '-'),
+('5c5b9f99b3708', 'Anwar Saefudin Yuri', 'Laki-laki', 'Indonesia', 'Paten Jurang RT5 RW 15 Magelang', 'Magelang', '085887763563', 'Magelang', '2002-06-07', 'Islam', '-', 'Belum Menikah', 172, 62, '-', '-', '-', '-'),
+('5c5ba4256728a', 'Anwar Saefudin Yuri', 'Laki-laki', 'Indonesia', 'Paten Jurang RT5 RW 15 Magelang', 'Magelang', '085887763563', 'Magelang', '2002-06-07', 'Islam', '-', 'Belum Menikah', 172, 62, '-', '-', '-', '-'),
+('5c5ba464d79e0', 'Anwar Saefudin Yuri', 'Laki-laki', 'Indonesia', 'Paten Jurang RT5 RW 15 Magelang', 'Magelang', '085887763563', 'Magelang', '2002-06-07', 'Islam', '-', 'Belum Menikah', 172, 62, '-', '-', '-', '-'),
+('5c5ba46c6cca0', 'Anwar Saefudin Yuri', 'Laki-laki', 'Indonesia', 'Paten Jurang RT5 RW 15 Magelang', 'Magelang', '085887763563', 'Magelang', '2002-06-07', 'Islam', '-', 'Belum Menikah', 172, 62, '-', '-', '-', '-'),
+('5c6a25161bf68', 'Anwar', 'Laki-laki', 'Indonesia', 'Magelan', 'Magelang', '085887763563', 'Magelang', '0000-00-00', 'Pilih', '-', 'Belum Menikah', 171, 60, '-', '-', '-', '-'),
+('5c6a31ce08821', 'ANWAR', 'Laki-laki', 'INDO', 'PJ', 'MAGELANG', '085887763563', 'MAGELANG', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6a337a499c9', 'Anwar SY', 'Laki-laki', 'Indo', 'PJ1', 'MGL', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6b6dc558f1e', 'Aldo', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6b707f1111e', 'Aldo S', 'Laki-laki', 'Indo', 'Sanden', 'Magelang', '085888888888', 'Purwodadi', '2001-11-02', 'Pilih', 'A', 'Belum Menikah', 198, 58, '-', '-', '-', '-'),
+('5c6ccb8b5b288', 'Aldo s', 'Laki-laki', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6f676bd67e2', 'NAMA1', 'Perempuan', 'KW1', 'AL1', 'AD1', '089', 'TL1', '0000-00-00', 'Perempuan', 'GD', 'Belum Menikah', 123, 123, '-', '-', '-', '-'),
+('5c6f6a3317798', 'nm1', 'Laki-laki', 'kw1', 'al1', 'ad1', '086', 'tl1', '2014-12-30', 'Pilih', 'ab', 'Belum Menikah', 175, 67, '-', '-', '-', '-'),
+('5c6f6e6375668', 'AnwarS', 'Laki-laki', 'Indo', 'Paten Jurang', 'Magelang', '085887763563', 'Magelang', '2002-06-07', 'Pilih', '-', 'Belum Menikah', 171, 60, '-', '-', '-', '-'),
+('5c6f6fba0a38d', 'Hero', 'Laki-laki', 'Myth', 'Far away', 'a', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6f710b6af38', 'soso', 'Perempuan', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6f7babc6351', 'nl1', 'Perempuan', 'kw1', 'al1', 'ad1', '085', 'tl1', '2017-01-01', 'Perempuan', '-', 'Belum Menikah', 0, 0, '-', '-', '-', '-'),
+('5c6f9f4eb9b27', '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6f9fe054b65', '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6f9ffa33dec', '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+('5c6fa045d16bb', '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-');
 
 -- --------------------------------------------------------
 
@@ -111,47 +141,43 @@ CREATE TABLE `datakeluarga` (
   `usia_ibu` int(10) DEFAULT NULL,
   `pend_terakhir_ibu` varchar(100) DEFAULT NULL,
   `pekerjaan_ibu` varchar(100) DEFAULT NULL,
-  `nm_saudara1` varchar(100) DEFAULT NULL,
-  `usia_saudara1` int(10) DEFAULT NULL,
-  `pend_terakhir_saudara1` varchar(100) DEFAULT NULL,
-  `pekerjaan_saudara1` varchar(100) DEFAULT NULL,
-  `nm_saudara2` varchar(100) DEFAULT NULL,
-  `usia_saudara2` int(10) DEFAULT NULL,
-  `pend_terakhir_saudara2` varchar(100) DEFAULT NULL,
-  `pekerjaan_saudara2` varchar(100) DEFAULT NULL,
-  `nm_saudara3` varchar(100) DEFAULT NULL,
-  `usia_saudara3` int(10) DEFAULT NULL,
-  `pend_terakhir_saudara3` varchar(100) DEFAULT NULL,
-  `pekerjaan_saudara3` varchar(100) DEFAULT NULL,
-  `nm_saudara4` varchar(100) DEFAULT NULL,
-  `usia_saudara4` int(10) DEFAULT NULL,
-  `pend_terakhir_saudara4` varchar(100) DEFAULT NULL,
-  `pekerjaan_saudara4` varchar(100) DEFAULT NULL,
-  `nm_saudara5` varchar(100) DEFAULT NULL,
-  `usia_saudara5` int(10) DEFAULT NULL,
-  `pend_terakhir_saudara5` varchar(100) DEFAULT NULL,
-  `pekerjaan_saudara5` varchar(100) DEFAULT NULL,
-  `nm_saudara6` varchar(100) DEFAULT NULL,
-  `usia_saudara6` int(10) DEFAULT NULL,
-  `pend_terakhir_saudara6` varchar(100) DEFAULT NULL,
-  `pekerjaan_saudara6` varchar(100) DEFAULT NULL,
-  `nm_saudara7` varchar(100) DEFAULT NULL,
-  `usia_saudara7` int(10) DEFAULT NULL,
-  `pend_terakhir_saudara7` varchar(100) DEFAULT NULL,
-  `pekerjaan_saudara7` varchar(100) DEFAULT NULL,
   `nm_si` varchar(100) DEFAULT NULL,
   `usia_si` int(10) DEFAULT NULL,
   `pend_si` varchar(100) DEFAULT NULL,
-  `kerja_si` varchar(100) DEFAULT NULL,
-  `nm_anak1` varchar(100) DEFAULT NULL,
-  `jk_anak1` enum('Laki-laki','Perempuan','Tidak Ada') DEFAULT NULL,
-  `nm_anak2` varchar(100) DEFAULT NULL,
-  `jk_anak2` enum('Laki-laki','Perempuan','Tidak Ada') DEFAULT NULL,
-  `umur_anak1` varchar(100) DEFAULT NULL,
-  `umur_anak2` varchar(100) DEFAULT NULL,
-  `pend_akhir_anak1` varchar(100) DEFAULT NULL,
-  `pend_akhir_anak2` varchar(100) DEFAULT NULL
+  `kerja_si` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `datakeluarga`
+--
+
+INSERT INTO `datakeluarga` (`id`, `nm_ayah`, `usia_ayah`, `pend_terakhir_ayah`, `pekerjaan_ayah`, `nm_ibu`, `usia_ibu`, `pend_terakhir_ibu`, `pekerjaan_ibu`, `nm_si`, `usia_si`, `pend_si`, `kerja_si`) VALUES
+('', 'b', 0, 'b', 'b', 'b', 0, 'b', 'b', NULL, NULL, NULL, NULL),
+('5c6a25161bf68', 'Muhhamad Juri Lasno', 0, 'SMP', '-', 'Semi Rahayu', 60, '-', '-', '-', 0, '-', '-');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `detailkeluarga`
+--
+
+CREATE TABLE `detailkeluarga` (
+  `id` int(11) NOT NULL,
+  `nm_saudara` varchar(100) NOT NULL,
+  `usia_saudara1` int(3) NOT NULL,
+  `pend_terakhir_saudara1` varchar(20) NOT NULL,
+  `pekerjaan_saudara1` varchar(100) NOT NULL,
+  `nm_anak` varchar(100) NOT NULL,
+  `usia_anak` int(3) NOT NULL,
+  `jk_anak` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `detailkeluarga`
+--
+
+INSERT INTO `detailkeluarga` (`id`, `nm_saudara`, `usia_saudara1`, `pend_terakhir_saudara1`, `pekerjaan_saudara1`, `nm_anak`, `usia_anak`, `jk_anak`) VALUES
+(1, '', 0, '', '', '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -185,43 +211,22 @@ CREATE TABLE `informasilainnya` (
   `hub1` varchar(100) DEFAULT NULL,
   `no_telp1` char(12) DEFAULT NULL,
   `alamat1` text,
-  `nm2` varchar(100) DEFAULT NULL,
-  `hub2` varchar(100) DEFAULT NULL,
-  `no_telp2` char(12) DEFAULT NULL,
-  `alamat2` text,
   `jns_penyakit1` varchar(100) DEFAULT NULL,
   `wkt1` date DEFAULT NULL,
   `rs_kota1` varchar(100) DEFAULT NULL,
-  `jns_penyakit2` varchar(100) DEFAULT NULL,
-  `wkt2` date DEFAULT NULL,
-  `rs_kota2` varchar(100) DEFAULT NULL,
-  `jns_penyakit3` varchar(100) DEFAULT NULL,
-  `wkt3` date DEFAULT NULL,
-  `rs_kota3` varchar(100) DEFAULT NULL,
-  `jns_penyakit4` varchar(100) DEFAULT NULL,
-  `wkt4` date DEFAULT NULL,
-  `rs_kota4` varchar(100) DEFAULT NULL,
   `nm_perusahaan1` varchar(100) DEFAULT NULL,
   `periode_krj1` int(20) DEFAULT NULL,
   `posisi1` varchar(100) DEFAULT NULL,
-  `gaji_akhir1` varchar(100) DEFAULT NULL,
-  `nm_perusahaan2` varchar(100) DEFAULT NULL,
-  `periode_krj2` int(20) DEFAULT NULL,
-  `posisi2` varchar(100) DEFAULT NULL,
-  `gaji_akhir2` varchar(100) DEFAULT NULL,
-  `nm_perusahaan3` varchar(100) DEFAULT NULL,
-  `periode_krj3` varchar(100) DEFAULT NULL,
-  `posisi3` varchar(100) DEFAULT NULL,
-  `gaji_akhir3` varchar(100) DEFAULT NULL,
-  `nm_perusahaan4` varchar(100) DEFAULT NULL,
-  `periode_krj4` int(20) DEFAULT NULL,
-  `posisi4` varchar(100) DEFAULT NULL,
-  `gaji_akhi4` varchar(100) DEFAULT NULL,
-  `nm_perusahaan5` varchar(100) DEFAULT NULL,
-  `periode_krj5` int(20) DEFAULT NULL,
-  `posisi5` varchar(100) DEFAULT NULL,
-  `gaji_akhir5` varchar(100) DEFAULT NULL
+  `gaji_akhir1` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `informasilainnya`
+--
+
+INSERT INTO `informasilainnya` (`id`, `nm1`, `hub1`, `no_telp1`, `alamat1`, `jns_penyakit1`, `wkt1`, `rs_kota1`, `nm_perusahaan1`, `periode_krj1`, `posisi1`, `gaji_akhir1`) VALUES
+('', '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
+('5c6f676bd67e2', 'Array', 'Array', 'Array', 'Array', 'Array', '0000-00-00', 'Array', 'Array', 0, 'Array', 'Array');
 
 -- --------------------------------------------------------
 
@@ -331,12 +336,13 @@ CREATE TABLE `pegawai` (
 --
 
 INSERT INTO `pegawai` (`nip`, `nm_pegawai`, `jk`, `tpt_lhr`, `tgl_lhr`, `agama`, `no_hp`, `email`, `alamat`, `tgl_msk`) VALUES
+('2019020005', 'Aldo', 'Laki-laki', 'Magelang', '7077-07-07', 'Islam', '080909', 'adwdadwadw@gmail.com', 'adawd', '2019-02-07'),
+('2019020009', 'Anwar Saefudin Yuri', 'Laki-laki', 'Magelang', '2002-06-07', 'Islam', '085887763563', 'anwarsaefudin555@gmail.com', 'Magelang', '2019-02-06'),
 ('MBI0001', 'Maulida Fitroyani ', 'Perempuan', 'Magelang', '1986-03-11', 'Kristen Protestan', '089765432987', 'maulisa@gmail.com', 'Magelang', '2018-05-01'),
 ('MBI0002', 'Atfalina Gati Awanas', 'Perempuan', 'Magelang', '1985-03-12', 'Islam', '0896268765444', 'lina@gmail.com', 'Magelang', '2017-04-02'),
 ('MBI0003', 'Muhammad Fani', 'Laki-laki', 'Magelang', '1983-06-15', 'Islam', '089625434678', 'fani@gmai.com', 'Magelang', '2017-03-02'),
 ('MBI0004', 'Taufiq Brilian', 'Laki-laki', 'Magelang', '1992-06-17', 'Islam', '089777654456', 'a@gmail.com', 'Magelang', '2017-05-02'),
-('MBI0005', 'Dewi Puji Lestari', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('MBI0006', 'Atika Khuril Aini', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+('MBI9020010', 'Dewi Puji Lestari', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -382,66 +388,29 @@ CREATE TABLE `pendidikankegiatan` (
   `thn_pend_sd` int(10) DEFAULT NULL,
   `nm_sklh_sd` varchar(100) DEFAULT NULL,
   `lulus_thn_sd` int(10) DEFAULT NULL,
-  `jenjang_pend_smp` varchar(100) DEFAULT NULL,
-  `thn_pend_smp` int(10) DEFAULT NULL,
-  `nm_sklh_smp` varchar(100) DEFAULT NULL,
-  `lulus_thn_smp` int(10) DEFAULT NULL,
-  `jenjang_pend_smasmk` varchar(100) DEFAULT NULL,
-  `thn_pend_smasmk` int(10) DEFAULT NULL,
-  `nm_sklh_smasmk` varchar(100) DEFAULT NULL,
-  `lulus_thn_smasmk` int(10) DEFAULT NULL,
-  `jenjang_pend_d3` varchar(100) DEFAULT NULL,
-  `thn_pend_d3` int(10) DEFAULT NULL,
-  `nm_univ_d3` varchar(100) DEFAULT NULL,
-  `lulus_thn_d3` int(10) DEFAULT NULL,
-  `jenjang_pend_s1` varchar(100) DEFAULT NULL,
-  `thn_pend_s1` int(10) DEFAULT NULL,
-  `nm_univ_s1` varchar(100) DEFAULT NULL,
-  `lulus_thn_s1` int(10) DEFAULT NULL,
-  `jenjang_pend_s2` varchar(100) DEFAULT NULL,
-  `thn_pend_s2` int(10) DEFAULT NULL,
-  `nm_univ_s2` varchar(100) DEFAULT NULL,
-  `lulus_thn_s2` int(10) DEFAULT NULL,
   `jns_bhs1` varchar(100) DEFAULT NULL,
   `kem_dengar1` varchar(100) DEFAULT NULL,
   `kem_baca1` varchar(100) DEFAULT NULL,
   `kem_bicara1` varchar(100) DEFAULT NULL,
   `kem_tulis1` varchar(100) DEFAULT NULL,
-  `jns_bhs2` varchar(100) DEFAULT NULL,
-  `kem_dengar2` varchar(100) DEFAULT NULL,
-  `kem_baca2` varchar(100) DEFAULT NULL,
-  `kem_bicara2` varchar(100) DEFAULT NULL,
-  `kem_tulis2` varchar(100) DEFAULT NULL,
-  `jns_bhs3` varchar(100) DEFAULT NULL,
-  `kem_dengar3` varchar(100) DEFAULT NULL,
-  `kem_baca3` varchar(100) DEFAULT NULL,
-  `kem_bicara3` varchar(100) DEFAULT NULL,
-  `kem_tulis3` varchar(100) DEFAULT NULL,
   `nm_organisasi1` varchar(100) DEFAULT NULL,
   `waktu1` date DEFAULT NULL,
   `jabatan1` varchar(100) DEFAULT NULL,
   `nama_organisasi2` varchar(100) DEFAULT NULL,
-  `waktu2` date DEFAULT NULL,
-  `jabatan2` varchar(100) DEFAULT NULL,
-  `nm_organisasi3` varchar(100) DEFAULT NULL,
-  `waktu3` date DEFAULT NULL,
-  `jabatan3` varchar(100) DEFAULT NULL,
-  `nm_organisasi4` varchar(100) DEFAULT NULL,
-  `waktu4` date DEFAULT NULL,
-  `jabatan4` varchar(100) DEFAULT NULL,
   `nm_pelatihan1` varchar(100) DEFAULT NULL,
   `waktu_1` date DEFAULT NULL,
-  `penyelenggara1` varchar(100) DEFAULT NULL,
-  `nm_pelatihan2` varchar(100) DEFAULT NULL,
-  `waktu_2` date DEFAULT NULL,
-  `penyelenggara2` varchar(100) DEFAULT NULL,
-  `nm_pelatihan3` varchar(100) DEFAULT NULL,
-  `waktu_3` date DEFAULT NULL,
-  `penyelenggara3` varchar(100) DEFAULT NULL,
-  `nm_pelatihan4` varchar(100) DEFAULT NULL,
-  `waktu_4` date DEFAULT NULL,
-  `penyelenggara4` varchar(100) DEFAULT NULL
+  `penyelenggara1` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pendidikankegiatan`
+--
+
+INSERT INTO `pendidikankegiatan` (`id`, `jenjang_pend_sd`, `thn_pend_sd`, `nm_sklh_sd`, `lulus_thn_sd`, `jns_bhs1`, `kem_dengar1`, `kem_baca1`, `kem_bicara1`, `kem_tulis1`, `nm_organisasi1`, `waktu1`, `jabatan1`, `nama_organisasi2`, `nm_pelatihan1`, `waktu_1`, `penyelenggara1`) VALUES
+('', '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', NULL, '', '0000-00-00', ''),
+('5c6f61c483e37', NULL, NULL, 'SMK 2', 2015, 'Array', 'Array', '-', '-', NULL, 'Array', '0000-00-00', 'Array', NULL, 'Array', '0000-00-00', 'Array'),
+('5c6f676bd67e2', NULL, NULL, 'SD2', 2003, 'Array', 'Array', 'KT2', 'KB2', NULL, 'Array', '0000-00-00', 'Array', NULL, 'Array', '0000-00-00', 'Array'),
+('5c6f7babc6351', NULL, NULL, 'smp8', 2011, 'Array', 'Array', 'malay', 'malay', NULL, 'Array', '0000-00-00', 'Array', NULL, 'Array', '0000-00-00', 'Array');
 
 -- --------------------------------------------------------
 
@@ -532,8 +501,10 @@ CREATE TABLE `recruitment` (
 --
 
 INSERT INTO `recruitment` (`id_hiring`, `nama`, `posisi`, `user_input`, `tgl_lamaran`, `progres_recruitment`, `resume`, `status_recruitment`) VALUES
-(55, 'Dewi Puji Lestari', 'Manager', 'dewi', '2019-01-03', 'CV Screening', 'Database Oracle Untuk Pemula.pdf', 'Hired'),
-(56, 'Atika Khuril Aini', 'Sistem Analis', 'atika', '2019-01-02', 'Pre-Interview', 'materi_1.pdf', 'Hired');
+(55, 'Dewi Puji Lestari', 'Manager', 'dewi', '2019-01-03', 'User Interview', 'Database Oracle Untuk Pemula.pdf', 'Hired'),
+(56, 'Atika Khuril Aini', 'Sistem Analis', 'atika', '2019-01-02', 'Pre-Interview', 'materi_1.pdf', 'Hired'),
+(57, 'Anwar', 'Staff', 'Member', '2002-06-07', 'User Interview', 'Materi-Rekayasa-Perangkat-Lunak-1.pdf', 'Hired'),
+(58, 'Aldo', 'Staff', 'Member', '2019-04-06', 'Skill Text', 'Materi-Rekayasa-Perangkat-Lunak-1.pdf', 'Hired');
 
 -- --------------------------------------------------------
 
@@ -581,6 +552,7 @@ CREATE TABLE `sk_krj` (
 --
 
 INSERT INTO `sk_krj` (`no_sk`, `nip`, `tgl_sk`, `tgl_selesai`, `id_jabatan`, `id_unit_krj`, `id_status_pegawai`, `status_sk`, `jenis_sk`) VALUES
+('RS/LR/02/19/00007', '2019020009', '2019-02-06', '2019-02-06', 'JAB004', 'UKJ003', 5, 'aktif', 'SK'),
 ('RS/LR/05/18/00002', 'MBI0001', '2017-05-01', '2018-05-05', 'JAB004', 'UKJ010', 3, 'nonaktif', 'SK'),
 ('RS/LR/05/18/00003', 'MBI0002', '2017-05-02', '2018-05-05', 'JAB004', 'UKJ010', 1, 'aktif', 'SK'),
 ('RS/LR/05/18/00004', 'MBI0003', '2017-05-02', '2018-05-04', 'JAB004', 'UKJ003', 3, 'aktif', 'SK'),
@@ -697,6 +669,12 @@ ALTER TABLE `cuti`
 -- Indexes for table `datakeluarga`
 --
 ALTER TABLE `datakeluarga`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `detailkeluarga`
+--
+ALTER TABLE `detailkeluarga`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -837,6 +815,12 @@ ALTER TABLE `cuti`
   MODIFY `id_cuti` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT for table `detailkeluarga`
+--
+ALTER TABLE `detailkeluarga`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `jadwal`
 --
 ALTER TABLE `jadwal`
@@ -870,7 +854,7 @@ ALTER TABLE `pengambilan_cuti`
 -- AUTO_INCREMENT for table `recruitment`
 --
 ALTER TABLE `recruitment`
-  MODIFY `id_hiring` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id_hiring` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `shift`
