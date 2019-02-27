@@ -295,7 +295,7 @@
      <div class="box-body">
 
                 <div class="form-group">
-                <form name="add_name" id="add_name">
+                <form name="add_name1" id="add_name1">
                 <div class="table-responsive">
                 <table class="table-table-bordered" id="dynamic_field1">
                 <tr>
@@ -305,10 +305,10 @@
                     <th>Pekerjaan Saudara</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="keluarga[0][nm_saudara]" class="form-control" placeholder="Nama Saudara Anda" /></td>
-                    <td><input type="text" name="keluarga[0][usia_saudara]" class="form-control" placeholder="Usia Saudara Anda " /></td>
-                    <td><input type="text" name="keluarga[0][pend_terkahir_saudara]" class="form-control" placeholder="Pendidikan Akhir Saudara Anda" /></td>
-                    <td><input type="text" name="keluarga[0][pekerjaan_saudara]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td>
+                    <td><input type="text" name="keluarga[0][nm_saudara]" class="form-control" placeholder="Nama Saudara" /></td>
+                    <td><input type="text" name="keluarga[0][usia_saudara]" class="form-control" placeholder="Usia Saudara" /></td>
+                    <td><input type="text" name="keluarga[0][pend_terkahir_saudara]" class="form-control" placeholder="Pendidikan Terkahir Saudara" /></td>
+                    <td><input type="text" name="keluarga[0][pekerjaan_saudara]" class="form-control" placeholder="Pekerjaan Saudara" /></td>
                     <td><button type="button" name="add1" id="add1" class="btn btn-success">+</button></td>
                 </table>   
                 </tr>
@@ -446,7 +446,7 @@ $(document).ready(function(){
                 alert(data);
                 $('#add_name')[0].reset();
             }
-        });
+        });  
     });
     
 });
