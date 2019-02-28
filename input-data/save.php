@@ -11,12 +11,11 @@ if($koneksi){
     echo"gagal koneksi";
 }
 
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
 
-//echo "<pre>";
-//print_r($_POST);
-//echo "</pre>";
-
-//exit();
+exit();
 
     $nm_lengkap = $_POST['nm_lengkap'];
     $jk = $_POST['jeniskelamin'];
@@ -59,7 +58,7 @@ if($koneksi){
     //if ($biodata) {
         # code...
         //echo "<script>alert('simpan biodata berhasil')</script>";
-    //} else {
+    //else {
          //echo "<script>alert('Gagal biodata')</script>";
     //}
 
@@ -76,24 +75,22 @@ if($koneksi){
     //}
 //detaill keluarga
 $insert_keluarga = $_POST['keluarga'];
-foreach ($insert_keluarga as $value) {
-    
+foreach ($insert_keluarga as $value) {   
     $nm_saudara1 = $value['nm_saudara'];
     $usia_saudara1 = $value['usia_saudara'];
-    $pend_terakhir_saudara1 = $value['pend_terkahir_saudara'];
+    $pend_terakhir_saudara1 = $value['pend_terakhir_saudara'];
     $pekerjaan_saudara1 = $value['pekerjaan_saudara'];
     $nm_anak = $value['nm_anak'];
     $usia_anak = $value['usia_anak'];
     $jeniskelamin = $value['jeniskelamin'];
     $detailkeluarga = mysql_query("INSERT INTO detailkeluarga (nm_saudara,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1,nm_anak,usia_anak,jk_anak)
         values('$nm_saudara1','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')");
-//echo "INSERT INTO detailkeluarga (nm_saudara,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1,nm_anak,usia_anak,jk_anak)
-        //values('$nm_saudara1','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')";
+//echo "INSERT INTO detailkeluarga (nm_saudara,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1,nm_anak,usia_anak,jk_anak)values('$nm_saudara1','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')";
 //exit();
      //if ($detailkeluarga) {
         //echo "<script>alert('simpan detailkeluarga berhasil')</script>";   
     //}else{
-       // echo "<script>alert('Gagal detailkeluarga')</script>";
+        //echo "<script>alert('Gagal detailkeluarga')</script>";
     //}
 
 }
