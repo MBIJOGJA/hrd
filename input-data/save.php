@@ -11,12 +11,11 @@ if($koneksi){
     echo"gagal koneksi";
 }
 
-
-//echo "<pre>";
-//print_r($_POST);
-//echo "</pre>";
-
-//exit();
+/*echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+*/
+exit();
 
     $nm_lengkap = $_POST['nm_lengkap'];
     $jk = $_POST['jeniskelamin'];
@@ -59,7 +58,7 @@ if($koneksi){
     //if ($biodata) {
         # code...
         //echo "<script>alert('simpan biodata berhasil')</script>";
-    //} else {
+    //else {
          //echo "<script>alert('Gagal biodata')</script>";
     //}
 
@@ -76,38 +75,23 @@ if($koneksi){
     //}
 //detaill keluarga
 $insert_keluarga = $_POST['keluarga'];
- 
-for ($i = 0; $i < $insert_keluarga; $i++) {
-    $nm_saudara1 = $insert_keluarga['nm_saudara'][$i];
-    $usia_saudara1 = $insert_keluarga['usia_saudara'][$i];
-    $pend_terakhir_saudara1 = $insert_keluarga['pend_terkahir_saudara'][$i];
-    $pekerjaan_saudara1 = $insert_keluarga['pekerjaan_saudara'][$i];
-    $nm_anak = $insert_keluarga['nm_anak'][$i]; 
-    $usia_anak = $insert_keluarga['usia_anak'][$i];
-    $jeniskelamin = $insert_keluarga['jeniskelamin'][$i];
-    $detailkeluarga = mysql_query("INSERT INTO detailkeluarga (nm_saudara1,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1)
-        values('$nm_saudara','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')");
-}
-foreach ($insert_keluarga as $value) {
-    
+foreach ($insert_keluarga as $value) {   
     $nm_saudara1 = $value['nm_saudara'];
     $usia_saudara1 = $value['usia_saudara'];
-    $pend_terakhir_saudara1 = $value['pend_terkahir_saudara'];
+    $pend_terakhir_saudara1 = $value['pend_terakhir_saudara'];
     $pekerjaan_saudara1 = $value['pekerjaan_saudara'];
     $nm_anak = $value['nm_anak'];
     $usia_anak = $value['usia_anak'];
     $jeniskelamin = $value['jeniskelamin'];
     $detailkeluarga = mysql_query("INSERT INTO detailkeluarga (nm_saudara,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1,nm_anak,usia_anak,jk_anak)
         values('$nm_saudara1','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')");
-//echo "INSERT INTO detailkeluarga (nm_saudara,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1,nm_anak,usia_anak,jk_anak)
-        //values('$nm_saudara1','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')";
+//echo "INSERT INTO detailkeluarga (nm_saudara,usia_saudara1,pend_terakhir_saudara1,pekerjaan_saudara1,nm_anak,usia_anak,jk_anak)values('$nm_saudara1','$usia_saudara1','$pend_terakhir_saudara1','$pekerjaan_saudara1','$nm_anak','$usia_anak','$jeniskelamin')";
 //exit();
      //if ($detailkeluarga) {
         //echo "<script>alert('simpan detailkeluarga berhasil')</script>";   
     //}else{
-       // echo "<script>alert('Gagal detailkeluarga')</script>";
+        //echo "<script>alert('Gagal detailkeluarga')</script>";
     //}
-
 
 }
 
