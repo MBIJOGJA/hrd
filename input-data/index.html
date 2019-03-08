@@ -6,10 +6,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/font-awesome.min.css" rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
-    
     <div class="container">
         <form action="save.php" method="post">
             <div class="wizards">
@@ -37,45 +35,88 @@
                     <p>Selesai</p>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
             <fieldset>
                 <h3 align="center">Biodata</h3>
                 <br>
                 <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 <br>
-                <div class="form-group">
+                <div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Biodata Diri </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+                <table border="0" width="1030">
+                <div class="form-group"><div class="form-group">
+                    <tr>
+                        <td>
                     <label>Nama Lengkap</label>
                     <input type="text" name="nm_lengkap" class="form-control"/>
+                    </td>
+                </div> 
+                <div class="form-group">
+                    <td>
+                    <label>Jenis Kelamin</label>
+                        <select name="jeniskelamin" class="form-control"><option> Pilih</option>
+                            <option name="jeniskelamin" value="Laki-laki"> Laki-laki </option>
+                            <option name="jeniskelamin" value="Perempuan"> Perempuan </option>
+                </select>
                 </div>
                 <div class="form-group">
-                    <label>Jenis Kelamin</label> <br>
-                    <input name="jk" class="minimal" type="radio" value="Laki-laki" checked> Laki-laki &nbsp;&nbsp;
-                    <input name="jk" class="minimal" type="radio" value="Perempuan"> Perempuan
-                </div>
-                <div class="form-group">
+                    <td>
                     <label>Kewarganegaraan</label>
                     <input type="text" name="kewarganegaraan" class="form-control"/>
+                </td>
                 </div>
+            </tr>
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Alamat Lengkap</label>
                     <input type="text" name="alamat_sesuai_ktp" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Alamat Domisil</label>
                     <input type="text" name="alamat_domisil" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>No HP</label>
                     <input type="text" name="phone" class="form-control" placeholder="08xxxxxxxxxx" />
+                </td>
+            </div>
+        </tr>
                 </div>
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Tempat Lahir</label>
                     <input type="text" name="tempat_lahir" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Tanggal Lahir</label>
                     <input type="date" name="tgl_lahir" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Agama</label>
                         <select name="agama" class="form-control"><option> Pilih</option>
                             <option name="agama" value="Islam"> Islam </option>
@@ -85,43 +126,77 @@
                             <option name="agama" value="Budha"> Budha </option>
                             <option name="agama" value="Khonghucu"> Khonghucu </option>
                 </select>
+            </td>
+        </div>
+    </tr>
                 </div>
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Golongan Darah</label>
                     <input type="text" name="gol_darah" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Status Pernikahan</label>
                     <select name="status_pernikahan" class="form-control"><option> Pilih</option>
                         <option name="status_pernikahan" value="Menikah"> Menikah </option>
                         <option name="status_pernikahan" value="Belum Menikah"> Belum Menikah </option>
                         <option name="status_pernikahan" value="Bercerai"> Bercerai </option>
                     </select>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Tinggi Badan</label>
                     <input type="text" name="tinggi_bdn" class="form-control"/>
+                </td>
+            </div>
+        </tr>
                 </div>
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Berat Badan</label>
                     <input type="text" name="berat_bdn" class="form-control"/>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>No KTP</label>
                     <input type="text" name="no_ktp" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>No Rekening</label>
                     <input type="text" name="no_rek" class="form-control"/>
+                </td>
+            </div>
+        </tr>
                 </div>
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Nama Bank</label>
                     <input type="text" name="nm_bank" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Nama Pemilik Rekening</label>
                     <input type="text" name="nm_pemilik_rek" class="form-control"/>
+                </td>
                 </div>
+                <td></td>
+            </tr>
+        </div>
+    </div>
+</div>
+</table>
+</div>
+</div>
                 <div class="form-group">
                     <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 </div>
@@ -129,165 +204,338 @@
                     <button type="button" class="btn btn-next">Next</button>
                 </div>
             </fieldset>
-            <fieldset>
+
+
+
+
+
+
+
+
+
+
+ <fieldset>
                 <h3 align="center">Keluarga</h3>
                 <br>
                 <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 <br>
+                <div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Orang Tua </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+                <table border="0" width="1030">
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Nama Ayah</label>
                     <input type="text" name="nm_ayah" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Nama Ibu</label>
                     <input type="text" name="nm_ibu" class="form-control"/>
+                </td>
+            </div>
+        </tr>
                 </div>
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Usia Ayah</label>
                     <input type="text" name="usia_ayah" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Usia Ibu</label>
                     <input type="text" name="usia_ibu" class="form-control"/>
+                </td>
+            </div>
+        </tr>
                 </div>
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Pendidikan Terkahir Ayah</label>
                     <input type="text" name="pend_terakhir_ayah" class="form-control"/>
+                </td>
                 </div><div class="form-group">
+                    <td>
                     <label>Pendidikan Terakhir Ibu</label>
                     <input type="text" name="pend_terakhir_ibu" class="form-control"/>
+                </td>
+            </div>
+        </tr>
                 </div><div class="form-group">
+                    <tr>
+                        <td>
                     <label>Pekerjaan Ayah</label>
                     <input type="text" name="pekerjaan_ayah" class="form-control"/>
+                </td>
                 </div><div class="form-group">
+                    <td>
                     <label>Pekerjaan Ibu</label>
                     <input type="text" name="pekerjaan_ibu" class="form-control"/>
+                </td>
+            </div>
+        </tr>
                 </div>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Saudara </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+                <table border="0" width="1030">
                 <div class="form-group">
-                    <form name="add_name" id="add_name">
-                <div class="table-responsive">
-                <table class="table table-bordered" id="dynamic_field1">
-                <tr>
-                    <th>Nama Saudara</th>
-                    <th>Usia Saudara</th>
-                    <th>Pendidikan Terkahir Saudara</th>
-                    <th>Pekerjaan Saudara</th>
-                </tr>
-                <tr>
-                    <td><input type="text" name="nm_saudara[]" class="form-control" placeholder="Nama Saudara Anda" /></td>
-                    <td><input type="text" name="usia_saudara[]" class="form-control" placeholder="Usia Saudara Anda " /></td>
-                    <td><input type="text" name="pend_terkahir_saudara[]" class="form-control" placeholder="Pendidikan Akhir Saudara Anda" /></td>
-                    <td><input type="text" name="pekerjaan_saudara[]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td>
-                    <td><button type="button" name="add1" id="add1" class="btn btn-success">+</button></td>
-                </table>   
-                </tr>
-                </div>
+                            <tr>
+                                <th width="600px">Nama Saudara</th>
+                                <th width="600px">Usia Saudara</th>
+                                <th width="600px">Pendidikan akhir saudara</th>
+                                <th width="600px">Pekerjaan Saudara</th>
+                                <th></th>
+                            </tr>
+                        
+                        <!--elemet sebagai target append-->
+                        <tbody id="itemlist">
+                            <tr>
+                                <td><input name="nm_saudara[1]" class="input-block-level" /></td>
+                                <td><input name="usia_saudara[1]" class="input-block-level" /></td>
+                                <td><input name="pend_terakhir_saudara[1]" class="input-block-level" /></td>
+                                <td><input name="pekerjaan_saudara[1]" class="input-block-level" /></td>
+                                <td></td>
+                            </tr>
+                    
+                    </tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-small btn-default" onclick="additem(); return false"><i class="icon-plus"></i>+Tambah</button></
+                                    <button name="submit" class="btn btn-small btn-primary"><i class="icon-ok"></i></button></td>
+                            </tr>
+
+                   
+        <script>
+            var i = 1;
+            function additem() {
+//                menentukan target append
+                var itemlist = document.getElementById('itemlist');
                 
-<script>
-$(document).ready(function(){
-    var i=1;
-    $('#add1').click(function(){
-        i++;
-        $('#dynamic_field1').append('<tr id="row1'+i+'"><td><input type="text" name="nm_saudara[]" class="form-control" placeholder="Nama Suadara Anda " /></td><td><input type="text" name="usia_saudara[]" class="form-control" placeholder="Usia Saudara Anda" /></td><td><input type="text" name="pend_terkahir_saudara[]" class="form-control" placeholder="Pendidikan Saudara Anda" /></td><td><input type="text" name="pekerjaan_saudara[]" class="form-control" placeholder="Pekerjaan Saudara Anda" /></td><td><button type="button" name="remove1" id="'+i+'" class="btn btn-danger btn_remove1">X</button></td></tr>');
-    });
-    
-    $(document).on('click', '.btn_remove1', function(){
-        var button_id = $(this).attr("id"); 
-        $('#row1'+button_id+'').remove();
-    });
-    
-    $('#submit').click(function(){      
-        $.ajax({
-            url:"name.php",
-            method:"POST",
-            data:$('#add_name').serialize(),
-            success:function(data)
-            {
-                alert(data);
-                $('#add_name')[0].reset();
+//                membuat element
+                var row = document.createElement('tr');
+                var jenis1 = document.createElement('td');
+                var jenis2 = document.createElement('td');
+                var jenis3 = document.createElement('td');
+                var jenis4 = document.createElement('td');
+                var aksi = document.createElement('td');
+ 
+//                meng append element
+                itemlist.appendChild(row);
+                row.appendChild(jenis1);
+                 row.appendChild(jenis2);
+                  row.appendChild(jenis3);
+                row.appendChild(jenis4);
+                row.appendChild(aksi);
+ 
+//                membuat element input
+                var jenis_input1 = document.createElement('input');
+                jenis_input1.setAttribute('name', 'nm_saudara[' + i + ']');
+                jenis_input1.setAttribute('class', 'input-block-level');
+ 
+ var jenis_input2 = document.createElement('input');
+                jenis_input2.setAttribute('name', 'usia_saudara[' + i + ']');
+                jenis_input2.setAttribute('class', 'input-block-level');
+ 
+var jenis_input3 = document.createElement('input');
+                jenis_input3.setAttribute('name', 'pend_terakhir_saudara[' + i + ']');
+                jenis_input3.setAttribute('class', 'input-block-level');
+ 
+
+
+                var jenis_input4 = document.createElement('input');
+                jenis_input4.setAttribute('name', 'pekerjaan_saudara[' + i + ']');
+                jenis_input4.setAttribute('class', 'input-block-level');
+ 
+                var hapus = document.createElement('span');
+ 
+//                meng append element input
+                jenis1.appendChild(jenis_input1);
+                jenis2.appendChild(jenis_input2);
+                jenis3.appendChild(jenis_input3);
+                jenis4.appendChild(jenis_input4);
+                aksi.appendChild(hapus);
+ 
+                hapus.innerHTML = '<button class="btn btn-small btn-default"><i class="icon-trash"></i>Hapus</button>';
+//                membuat aksi delete element
+                hapus.onclick = function () {
+                    row.parentNode.removeChild(row);
+                };
+ 
+                i++;
             }
-        });
-    });
-    
-});
-</script>
-                </div>
+        </script>
+         </table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Suami / Istri </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+                <table border="0" width="1030">
                 <div class="form-group">
-                    <label>Usia Saudara</label>
-                    <input type="text" name="usia_saudara1" class="form-control" placeholder="1. " /> <br>
-                    <input type="text" name="usia_saudara2" class="form-control" placeholder="2. " /> <br>
-                    <input type="text" name="usia_saudara3" class="form-control" placeholder="3. " /> <br>
-                    <input type="text" name="usia_saudara4" class="form-control" placeholder="4. " /> <br>
-                    <input type="text" name="usia_saudara5" class="form-control" placeholder="5. " /> <br>
-                    <input type="text" name="usia_saudara6" class="form-control" placeholder="6. " /> <br>
-                    <input type="text" name="usia_saudara7" class="form-control" placeholder="7. " /> <br>
-                </div>
-                <div class="form-group">
-                    <label>Pendidikan Terakhir Saudara</label>
-                    <input type="text" name="pend_terakhir_saudara1" class="form-control" placeholder="1. " /> <br>
-                    <input type="text" name="pend_terakhir_saudara2" class="form-control" placeholder="2. " /> <br>
-                    <input type="text" name="pend_terakhir_saudara3" class="form-control" placeholder="3. " /> <br>
-                    <input type="text" name="pend_terakhir_saudara4" class="form-control" placeholder="4. " /> <br>
-                    <input type="text" name="pend_terakhir_saudara5" class="form-control" placeholder="5. " /> <br>
-                    <input type="text" name="pend_terakhir_saudara6" class="form-control" placeholder="6. " /> <br>
-                    <input type="text" name="pend_terakhir_saudara7" class="form-control" placeholder="7. " /> <br>
-                </div>
-                <div class="form-group">
-                    <label>Pekerjaan Saudara</label>
-                    <input type="text" name="pekerjaan_saudara1" class="form-control" placeholder="1. " /> <br>
-                    <input type="text" name="pekerjaan_saudara2" class="form-control" placeholder="2. " /> <br>
-                    <input type="text" name="pekerjaan_saudara3" class="form-control" placeholder="3. " /> <br>
-                    <input type="text" name="pekerjaan_saudara4" class="form-control" placeholder="4. " /> <br>
-                    <input type="text" name="pekerjaan_saudara5" class="form-control" placeholder="5. " /> <br>
-                    <input type="text" name="pekerjaan_saudara6" class="form-control" placeholder="6. " /> <br>
-                    <input type="text" name="pekerjaan_saudara7" class="form-control" placeholder="7. " /> <br>
-                </div>
-                <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Nama Suami / Istri</label>
                     <input type="text" name="nm_si" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Usia Suami / Istri</label>
                     <input type="text" name="usia_si" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Pendidikan Terakhir Suami / Istri</label>
                     <input type="text" name="pend_si" class="form-control"/>
+                </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Pekerjaan Suami / Istri</label>
                     <input type="text" name="kerja_si" class="form-control"/>
+                </td>
                 </div>
+            </tr>
+        </div>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Anak </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+               <table border="0" width="1030">
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Nama Anak</label>
                         <input type="text" name="nm_anak1" class="form-control" placeholder="1."/> <br>
+                    </td>
                     <div class="form-group">
-                        <label>Jenis Kelamin</label> <br>
+                        <td>
+                         <label>Nama Anak</label>
+                        <input type="text" name="nm_anak2" class="form-control" placeholder="2."/> <br>
+                    </td>
+                </div>
+            </tr>
+                    <div class="form-group">
+                        <tr>
+                            <td>
+                        <label>Jenis Kelamin Anak</label> <br>
                         <input name="jk_anak1" class="minimal" type="radio" value="Laki-laki" checked> Laki-laki &nbsp;&nbsp;
                         <input name="jk_anak1" class="minimal" type="radio" value="Perempuan"> Perempuan
                         <input name="jk_anak1" class="minimal" type="radio" value="Tidak Ada"> Tidak ada
+                    </td>
                     </div>
                 </div>
                 <br>
-                <div class="form-group">
-                        <input type="text" name="nm_anak2" class="form-control" placeholder="2."/> <br>
                     <div class="form-group">
-                        <label>Jenis Kelamin</label> <br>
+                        <td>
+                        <label>Jenis Kelamin Anak</label> <br>
                         <input name="jk_anak2" class="minimal" type="radio" value="Laki-laki" checked> Laki-laki &nbsp;&nbsp;
                         <input name="jk_anak2" class="minimal" type="radio" value="Perempuan"> Perempuan
                         <input name="jk_anak2" class="minimal" type="radio" value="Tidak Ada"> Tidak ada
+                    </td>
+                </div>
+            </tr>
                     </div> 
                 </div>
                 <div class="form-group">
-                    <label>Usia</label>
+                    <tr>
+                        <td>
+                    <label>Usia Anak</label>
                     <input type="text" name="umur_anak1" class="form-control" placeholder="1."/><br>
+                </td>
+                <center>
+    <a class="add-box btn btn-primary"" href="#" onclick=""> <i class="fa fa-plus"> </i> Tambah</a>
+    </center>
+                <td>
+                    <label>Usia Anak</label>
                     <input type="text" name="umur_anak2" class="form-control" placeholder="2."/><br>
+                </td>
+            </tr>
                 </div>
                 <div class="form-group">
-                    <label>Pendidikan Terakhir</label>
+                    <tr>
+                        <td>
+                    <label>Pendidikan Terakhir Anak</label>
                     <input type="text" name="pend_akhir_anak1" class="form-control" placeholder="1."/><br>
+                </td>
+                <td>
+                    <label>Pendidikan Terakhir Anak</label>
                     <input type="text" name="pend_akhir_anak2" class="form-control" placeholder="2."/><br>
+                </td>
+            </tr>
                 </div>
+            </table>
+        </div>
+    </div>
                 <div class="form-group">
                     <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 </div>
@@ -296,12 +544,33 @@ $(document).ready(function(){
                     <button type="button" class="btn btn-next">Next</button>
                 </div>
             </fieldset>
+
+
+
+
+
+
+
+
+
+
             <fieldset>
                 <h3 align="center">Pendidikan & Kegiatan</h3>
                 <br>
                 <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 <br>
+                <div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Pendidikan </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+                <table border="0" width="1030">
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Jenjang Pendidikan</label>
                     <input type="text" name="jenjang_pend_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="jenjang_pend_smp" class="form-control" placeholder="2." /> <br>
@@ -309,8 +578,10 @@ $(document).ready(function(){
                     <input type="text" name="jenjang_pend_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="jenjang_pend_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="jenjang_pend_s2" class="form-control" placeholder="6." /> <br>
+                        </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Tahun Pendidikan</label>
                     <input type="text" name="thn_pend_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="thn_pend_smp" class="form-control" placeholder="2." /> <br>
@@ -318,8 +589,10 @@ $(document).ready(function(){
                     <input type="text" name="thn_pend_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="thn_pend_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="thn_pend_s2" class="form-control" placeholder="6." /> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Nama Sekolah</label>
                     <input type="text" name="nm_sklh_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="nm_sklh_smp" class="form-control" placeholder="2." /> <br>
@@ -327,8 +600,10 @@ $(document).ready(function(){
                     <input type="text" name="nm_univ_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="nm_univ_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="nm_univ_s2" class="form-control" placeholder="6." /> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Lulus Tahun</label>
                     <input type="text" name="lulus_thn_sd" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="lulus_thn_smp" class="form-control" placeholder="2." /> <br>
@@ -336,85 +611,166 @@ $(document).ready(function(){
                     <input type="text" name="lulus_thn_d3" class="form-control" placeholder="4." /> <br>
                     <input type="text" name="lulus_thn_s1" class="form-control" placeholder="5." /> <br>
                     <input type="text" name="lulus_thn_s2" class="form-control" placeholder="6." /> <br>
-                </div>
-                <h4 align="center">Kemampuan Bahasa Asing</h4>
-                <br>
+                    </td>
+                </div></tr>
+            </div>
+        </table></div></div>
+
+
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Kemampuan Bahasa Asing </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+        <table border="0" width="1030">
                 <div class="form-group">
+                    <tr>
+                        <td>
                     <label>Jenis Bahasa</label>
                     <input type="text" name="jns_bhs1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="jns_bhs2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="jns_bhs3" class="form-control" placeholder="3." /> <br>
+                        </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Kemampuan Mendengarkan</label>
                     <input type="text" name="kem_dengar1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_dengar2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_dengar3" class="form-control" placeholder="3." /> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Kemampuan Membaca</label>
                     <input type="text" name="kem_baca1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_baca2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_baca3" class="form-control" placeholder="3." /> <br>
+                    </td>
                 </div>
+            </tr>
                 <div class="form-group">
+                 <tr>
+                    <td>
                     <label>Kemampuan Berbicara</label>
                     <input type="text" name="kem_bicara1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_bicara2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_bicara3" class="form-control" placeholder="3." /> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Kemampuan Menulis</label>
                     <input type="text" name="kem_tulis1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="kem_tulis2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="kem_tulis3" class="form-control" placeholder="3." /> <br>
+                    </td>
                 </div>
-                <h4 align="center">Aktivitas Organisasi</h4>
-                <br>
+            </tr>
+        </div>
+    </table></div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Aktivitas Organisasi </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+        <table border="0" width="1030">
+            <tr>
                 <div class="form-group">
+                    <td>
                     <label>Nama Organisasi</label>
                     <input type="text" name="nm_organisasi1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="nm_organisasi2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="nm_organisasi3" class="form-control" placeholder="3." /> <br>
                     <input type="text" name="nm_organisasi4" class="form-control" placeholder="4." /> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Waktu</label>
                     <input type="date" name="waktu1" class="form-control"/> <br>
                     <input type="date" name="waktu2" class="form-control"/> <br>
                     <input type="date" name="waktu3" class="form-control"/> <br>
                     <input type="date" name="waktu4" class="form-control"/> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Jabatan</label>
                     <input type="text" name="jabatan1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="jabatan2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="jabatan3" class="form-control" placeholder="3." /> <br>
                     <input type="text" name="jabatan4" class="form-control" placeholder="4." /> <br>
+                    </td>
                 </div>
-                <h4 align="center">Pelatihan / Kursus yang pernah diikuti</h4>
-                <br>
+            </tr>
+        </table></div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Pelatihan / Kursus yang pernah diikuti </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+        <table border="0" width="1030">
+            <tr>
                 <div class="form-group">
+                    <td>
                     <label>Nama Pelatihan</label>
                     <input type="text" name="nm_pelatihan1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="nm_pelatihan2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="nm_pelatihan3" class="form-control" placeholder="3." /> <br>
                     <input type="text" name="nm_pelatihan4" class="form-control" placeholder="4." /> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Waktu</label>
                     <input type="date" name="waktu_1" class="form-control"/> <br>
                     <input type="date" name="waktu_2" class="form-control"/> <br>
                     <input type="date" name="waktu_3" class="form-control"/> <br>
                     <input type="date" name="waktu_4" class="form-control"/> <br>
+                    </td>
                 </div>
                 <div class="form-group">
+                    <td>
                     <label>Penyelenggara</label>
                     <input type="text" name="penyelenggara1" class="form-control" placeholder="1." /> <br>
                     <input type="text" name="penyelenggara2" class="form-control" placeholder="2." /> <br>
                     <input type="text" name="penyelenggara3" class="form-control" placeholder="3." /> <br>
                     <input type="text" name="penyelenggara4" class="form-control" placeholder="4." /> <br>
+                    </td>
                 </div>
+            </tr>
+        </table></div></div>
+
                 <div class="form-group">
                     <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                 </div>
@@ -423,90 +779,177 @@ $(document).ready(function(){
                     <button type="button" class="btn btn-next">Next</button>
                 </div>
             </fieldset>
+
+
+
+
+
+
+
+
+
+
             <fieldset>
                     <h3 align="center">Informasi Lainnya</h3>
                     <br>
                     <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                     <br>
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Informasi Saudara </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+        <table border="0" width="1030">
+            <tr>
                     <div class="form-group">
+                        <td>
                         <label>Nama Saudara yang bisa dihubungi</label>
                         <input type="text" name="nm1" class="form-control" placeholder="1." /> <br>
                         <input type="text" name="nm2" class="form-control" placeholder="2." /> <br>
+                        </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>Hubungan</label>
                         <input name="hub1" class="form-control" placeholder="1." /> <br>
                         <input name="hub2" class="form-control" placeholder="2." /> <br>
+                    </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>No HP</label>
                         <input type="text" name="no_telp1" class="form-control" placeholder="1. 08x-xxx-xxx-xxx" /> <br>
                         <input type="text" name="no_telp2" class="form-control" placeholder="2. 08x-xxx-xxx-xxx" /> <br>
+                    </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>Alamat</label>
                         <input type="text" name="alamat1" class="form-control" placeholder="1." /> <br>
                         <input type="text" name="alamat2" class="form-control" placeholder="2." /> <br>
+                    </td>
                     </div>
-                        <h4 align="center">Riwayat Perawatan Di Rumah Sakit</h4>
-                        <br>
-                        <h5>* Jika data kosong diisi tanda <b>-</b> </h5>
-                        <br>
+                </tr>
+            </table>
+        </div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Riwayat Perawatan Di Rumah Sakit </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+        <table border="0" width="1030">
                     <div class="form-group">
+                        <tr>
+                            <td>
                         <label>Jenis Penyakit</label>
                         <input type="text" name="jns_penyakit1" class="form-control" placeholder="1." /> <br>
                         <input type="text" name="jns_penyakit2" class="form-control" placeholder="2." /> <br>
                         <input type="text" name="jns_penyakit3" class="form-control" placeholder="3." /> <br>
                         <input type="text" name="jns_penyakit4" class="form-control" placeholder="4." /> <br>
+                        </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>Waktu</label>
                         <input type="date" name="wkt1" class="form-control"/> <br>
                         <input type="date" name="wkt2" class="form-control"/> <br>
                         <input type="date" name="wkt3" class="form-control"/> <br>
                         <input type="date" name="wkt4" class="form-control"/> <br>
+                        </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>Rumah Sakit dan Kota</label>
                         <input type="text" name="rs_kota1" class="form-control" placeholder="1." /> <br>
                         <input type="text" name="rs_kota2" class="form-control" placeholder="2." /> <br>
                         <input type="text" name="rs_kota3" class="form-control" placeholder="3." /> <br>
                         <input type="text" name="rs_kota4" class="form-control" placeholder="4." /> <br>
+                        </td>
                     </div>
-                    <h4 align="center">Pengalaman Kerja</h4>
-                    <br>
+                </tr>
+            </div>
+        </table>
+    </div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="box box-solid box-primary">
+<div class="box-header">
+<h3 class="btn btn disabled box-title">
+<i class="fa fa-user-md"></i> Pengalaman Kerja </h3>
+  <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+  <i class="fa fa-minus"></i></a>
+    </div>
+     <div class="box-body">
+        <table border="0" width="1030">
+            <tr>
                     <div class="form-group">
+                        <td>
                         <label>Nama Perusahaan</label>
                         <input type="text" name="nm_perusahaan1" class="form-control" placeholder="1." /> <br>
                         <input type="text" name="nm_perusahaan2" class="form-control" placeholder="2." /> <br>
                         <input type="text" name="nm_perusahaan3" class="form-control" placeholder="3." /> <br>
                         <input type="text" name="nm_perusahaan4" class="form-control" placeholder="4." /> <br>
                         <input type="text" name="nm_perusahaan5" class="form-control" placeholder="5." /> <br>
+                    </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>Periode Kerja</label>
                         <input name="periode_krj1" class="form-control" placeholder="1."> <br>
                         <input name="periode_krj2" class="form-control" placeholder="2."> <br>
                         <input name="periode_krj3" class="form-control" placeholder="3."> <br>
                         <input name="periode_krj4" class="form-control" placeholder="4."> <br>
                         <input name="periode_krj5" class="form-control" placeholder="5."> <br>
+                        </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>Posisi</label>
                         <input type="text" name="posisi1" class="form-control" placeholder="1."/> <br>
                         <input type="text" name="posisi2" class="form-control" placeholder="2." /> <br>
                         <input type="text" name="posisi3" class="form-control" placeholder="3." /> <br>
                         <input type="text" name="posisi4" class="form-control" placeholder="4." /> <br>
                         <input type="text" name="posisi5" class="form-control" placeholder="5." /> <br>
+                        </td>
                     </div>
                     <div class="form-group">
+                        <td>
                         <label>Gaji Terakhir</label>
                         <input type="text" name="gaji_akhir1" class="form-control" placeholder="1. Rp" /> <br>
                         <input type="text" name="gaji_akhir2" class="form-control" placeholder="2. Rp" /> <br>
                         <input type="text" name="gaji_akhir3" class="form-control" placeholder="3. Rp" /> <br>
                         <input type="text" name="gaji_akhir4" class="form-control" placeholder="4. Rp" /> <br>
                         <input type="text" name="gaji_akhir5" class="form-control" placeholder="5. Rp" /> <br>
+                    </td>
                     </div>
+                </tr>
+            </table>
+        </div></div>
+        
                     <div class="form-group">
                         <h4>* Jika data kosong diisi tanda <b>-</b> </h4>
                     </div>
@@ -533,4 +976,4 @@ $(document).ready(function(){
     <script src="js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
+</html><main></main>
