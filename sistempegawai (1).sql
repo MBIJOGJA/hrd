@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 26, 2019 at 09:06 AM
+-- Generation Time: Mar 04, 2019 at 05:37 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -78,43 +78,19 @@ CREATE TABLE `biodata` (
 --
 
 INSERT INTO `biodata` (`id`, `nm_lengkap`, `jeniskelamin`, `kewarganegaraan`, `alamat_sesuai_ktp`, `alamat_domisil`, `phone`, `tempat_lahir`, `tgl_lahir`, `agama`, `gol_darah`, `status_pernikahan`, `tinggi_bdn`, `berat_bdn`, `no_ktp`, `no_rek`, `nm_bank`, `nm_pemilik_rek`) VALUES
-(4, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(5, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(6, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(7, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(8, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(9, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(10, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(11, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(12, 'q', 'Laki-laki', 'q', 'q', 'q', 'q', 'q', '2019-01-01', 'Islam', 'q', 'Belum Menikah', 0, 0, 'q', 'q', 'q', 'q'),
-(13, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(14, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(15, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(16, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(17, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(18, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(19, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(20, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(21, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(22, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(23, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(24, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(25, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(26, 't', '', 't', 't', 't', 't', 't', '0000-00-00', 'Pilih', 't', 'Pilih', 0, 0, 't', 't', 't', 't'),
-(27, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(28, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(29, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(30, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(31, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(32, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(33, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(34, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(35, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(36, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q'),
-(37, 'a', '', 'a', 'a', 'a', 'a', 'a', '0000-00-00', 'Pilih', 'a', 'Pilih', 0, 0, 'a', 'a', 'a', 'a'),
-(38, 'a', '', 'a', 'a', 'a', 'a', 'a', '0000-00-00', 'Pilih', 'a', 'Pilih', 0, 0, 'a', 'a', 'a', 'a'),
-(39, '', '', '', '', '', '', '', '0000-00-00', '', '', '', 0, 0, '', '', '', ''),
-(40, 'q', '', 'q', 'q', 'q', 'q', 'q', '0000-00-00', 'Pilih', 'q', 'Pilih', 0, 0, 'q', 'q', 'q', 'q');
+(105, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(106, 'aldo', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(107, 'aliandp', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(108, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(109, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(110, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(111, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(112, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(113, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(114, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(115, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-'),
+(116, 'muhammad abul khadir', 'Laki-laki', 'Indonesia', 'Magelang', 'Jawa Tengah', '086734521736', 'Bandung', '1997-04-01', 'Islam', 'o', 'Belum Menikah', 180, 70, '1902901298993892', 'u2891913892', 'BNI', 'muhammad abdul khadir'),
+(117, '-', '', '-', '-', '-', '-', '-', '0000-00-00', 'Pilih', '-', 'Pilih', 0, 0, '-', '-', '-', '-');
 
 -- --------------------------------------------------------
 
@@ -165,42 +141,69 @@ CREATE TABLE `datakeluarga` (
 --
 
 INSERT INTO `datakeluarga` (`id`, `nm_ayah`, `usia_ayah`, `pend_terakhir_ayah`, `pekerjaan_ayah`, `nm_ibu`, `usia_ibu`, `pend_terakhir_ibu`, `pekerjaan_ibu`, `nm_si`, `usia_si`, `pend_si`, `kerja_si`) VALUES
-(1, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(2, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(3, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(4, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(5, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(6, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(7, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(8, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
-(9, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(10, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(11, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(12, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(13, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(14, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(15, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(16, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(17, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(18, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(19, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(20, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(21, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(22, 't', 0, 't', 't', 't', 0, 't', 't', 't', 0, 't', 't'),
-(23, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(24, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(25, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(26, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(27, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(28, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(29, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(30, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(31, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(32, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'qq', 'q'),
-(33, 'a', 0, 'a', 'a', 'a', 0, 'a', 'a', 'a', 0, 'a', 'a'),
-(34, 'a', 0, 'a', 'a', 'a', 0, 'a', 'a', 'a', 0, 'a', 'a'),
-(35, '', 0, '', '', '', 0, '', '', '', 0, '', ''),
-(36, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q');
+(51, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'qq'),
+(52, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'qq'),
+(53, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(54, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(55, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(56, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'e', 0, 'e', 'e'),
+(57, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'e', 0, 'e', 'e'),
+(58, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'e', 0, 'e', 'e'),
+(59, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'e', 0, 'e', 'e'),
+(60, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'e', 0, 'e', 'e'),
+(61, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'E', 0, 'E', 'E'),
+(62, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'E', 0, 'E', 'E'),
+(63, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'E', 0, 'E', 'E'),
+(64, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'E', 0, 'E', 'E'),
+(65, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'E', 0, 'E', 'E'),
+(66, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'E', 0, 'E', 'E'),
+(67, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'q', 0, 'q', 'q'),
+(68, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'q', 0, 'q', 'q'),
+(69, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'q', 0, 'q', 'q'),
+(70, 'w', 0, 'w', 'w', 'w', 0, 'w', 'w', 'w', 0, 'w', 'w'),
+(71, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(72, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(73, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(74, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(75, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(76, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(77, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(78, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(79, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(80, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(81, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(82, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(83, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(84, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(85, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(86, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(87, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(88, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(89, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(90, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(91, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(92, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(93, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(94, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(95, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(96, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(97, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(98, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(99, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(100, 'q', 0, 'q', 'q', 'q', 0, 'q', 'q', 'q', 0, 'q', 'q'),
+(101, 'JURI', 20, 'u8', 'iuui', 'SEMI', 20, 'smk', '-', '-', 0, '-', '-'),
+(102, 'no', 90, '-', '-', 'ni', 0, '-', '-', '-', 0, '-', '-'),
+(103, 'arssss', 0, '-', '-', 'narni', 0, '-', '-', '-', 0, '-', '-'),
+(104, '-', 0, '-', '-', '-', 0, '-', '-', '-', 0, '-', '-'),
+(105, '-', 0, '-', '-', '-', 0, '-', '-', '-', 0, '-', '-'),
+(106, '-', 0, '-', '-', '-', 0, '-', '-', '-', 0, '-', '-'),
+(107, '-', 0, '-', '-', '-', 0, '-', '-', '-', 0, '-', '-'),
+(108, '-', 0, '-', '-', '-', 0, '-', '-', '-', 0, '-', '-'),
+(109, '-', 0, '-', '-', '-', 0, '-', '-', '-', 0, '-', '-'),
+(110, '-', 0, '-', '-', '-', 0, '-', '--', '-', 0, '-', '-'),
+(111, '-', 0, '-', '-', '-', 0, '-', '--', '-', 0, '-', '-'),
+(112, 'Eko Prawiro', 57, 'D3', 'Wiraswasta', 'Indah Wahyuningtyas', 54, 'SMA', '-', '-', 0, '-', '-'),
+(113, '-', 0, '-', '-', '-', 0, '-', '-', '-', 0, '-', '-');
 
 -- --------------------------------------------------------
 
@@ -211,51 +214,59 @@ INSERT INTO `datakeluarga` (`id`, `nm_ayah`, `usia_ayah`, `pend_terakhir_ayah`, 
 CREATE TABLE `detailkeluarga` (
   `id` int(11) NOT NULL,
   `nm_saudara` varchar(100) NOT NULL,
-  `usia_saudara1` int(3) NOT NULL,
+  `usia_saudara1` int(30) NOT NULL,
   `pend_terakhir_saudara1` varchar(20) NOT NULL,
-  `pekerjaan_saudara1` varchar(100) NOT NULL,
-  `nm_anak` varchar(100) NOT NULL,
-  `usia_anak` int(3) NOT NULL,
-  `jk_anak` varchar(30) NOT NULL
+  `pekerjaan_saudara1` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `detailkeluarga`
 --
 
-INSERT INTO `detailkeluarga` (`id`, `nm_saudara`, `usia_saudara1`, `pend_terakhir_saudara1`, `pekerjaan_saudara1`, `nm_anak`, `usia_anak`, `jk_anak`) VALUES
-(8, '', 0, '', '', '', 0, ''),
-(9, '', 0, '', '', '', 0, ''),
-(10, '', 0, '', '', '', 0, ''),
-(11, '', 0, '', '', '', 0, ''),
-(12, '', 0, '', '', '', 0, ''),
-(13, '', 0, '', '', '', 0, ''),
-(14, '', 0, '', '', '', 0, ''),
-(15, '', 0, '', '', '', 0, ''),
-(16, '', 0, '', '', '', 0, ''),
-(17, '', 0, '', '', '', 0, ''),
-(18, '', 0, '', '', '', 0, ''),
-(19, '', 0, '', '', '', 0, ''),
-(20, '', 0, '', '', '', 0, ''),
-(21, '', 0, '', '', '', 0, ''),
-(22, '', 0, '', '', '', 0, ''),
-(23, '', 0, '', '', '', 0, ''),
-(24, '', 0, '', '', '', 0, ''),
-(25, '', 0, '', '', '', 0, ''),
-(26, '', 0, '', '', '', 0, ''),
-(27, '', 0, '', '', '', 0, ''),
-(28, '', 0, '', '', '', 0, ''),
-(29, '', 0, '', '', '', 0, ''),
-(30, '', 0, '', '', '', 0, ''),
-(31, '', 0, '', '', '', 0, ''),
-(32, '', 0, '', '', '', 0, ''),
-(33, '', 0, '', '', '', 0, ''),
-(34, '', 0, '', '', '', 0, ''),
-(35, '', 0, '', '', '', 0, ''),
-(36, '', 0, '', '', '', 0, ''),
-(37, '', 0, '', '', '', 0, ''),
-(38, '', 0, '', '', '', 0, ''),
-(39, '', 0, '', '', '', 0, '');
+INSERT INTO `detailkeluarga` (`id`, `nm_saudara`, `usia_saudara1`, `pend_terakhir_saudara1`, `pekerjaan_saudara1`) VALUES
+(150, '-', 0, '-', '-'),
+(151, '-', 0, '-', '-'),
+(152, '-', 0, '-', '-'),
+(153, '-', 0, '-', '-'),
+(154, '-', 0, '-', '-'),
+(155, '-', 0, '-', '-'),
+(156, '-', 0, '-', '-'),
+(157, '-', 0, '-', '-'),
+(158, '-', 0, '-', '-'),
+(159, '-', 0, '-', '-'),
+(160, 'Adi Putra Julianto', 24, 'PTN', 'Staff'),
+(161, 'Eni Nurmalasari', 17, 'SMP', '-'),
+(162, '-', 0, '-', '-');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `detailkeluarga1`
+--
+
+CREATE TABLE `detailkeluarga1` (
+  `id` int(11) NOT NULL,
+  `nm_anak` varchar(100) NOT NULL,
+  `usia_anak` varchar(110) NOT NULL,
+  `jk_anak` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `detailkeluarga1`
+--
+
+INSERT INTO `detailkeluarga1` (`id`, `nm_anak`, `usia_anak`, `jk_anak`) VALUES
+(1, 'kikp', '20', 'Pilih'),
+(2, '-', '-', 'Pilih'),
+(3, '-', '-', 'Pilih'),
+(4, '-', '-', 'Pilih'),
+(5, '-', '-', 'Pilih'),
+(6, '-', '-', 'Pilih'),
+(7, '-', '-', 'Pilih'),
+(8, '-', '-', 'Pilih'),
+(9, '-', '-', 'Pilih'),
+(10, '-', '-', 'Pilih'),
+(11, '-', '-', 'Pilih');
 
 -- --------------------------------------------------------
 
@@ -288,43 +299,70 @@ CREATE TABLE `informasilainnya` (
   `nm1` varchar(100) DEFAULT NULL,
   `hub1` varchar(100) DEFAULT NULL,
   `no_telp1` char(12) DEFAULT NULL,
-  `alamat1` text,
-  `jns_penyakit1` varchar(100) DEFAULT NULL,
-  `wkt1` date DEFAULT NULL,
-  `rs_kota1` varchar(100) DEFAULT NULL,
-  `nm_perusahaan1` varchar(100) DEFAULT NULL,
-  `periode_krj1` int(20) DEFAULT NULL,
-  `posisi1` varchar(100) DEFAULT NULL,
-  `gaji_akhir1` varchar(100) DEFAULT NULL
+  `alamat1` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `informasilainnya`
 --
 
-INSERT INTO `informasilainnya` (`id`, `nm1`, `hub1`, `no_telp1`, `alamat1`, `jns_penyakit1`, `wkt1`, `rs_kota1`, `nm_perusahaan1`, `periode_krj1`, `posisi1`, `gaji_akhir1`) VALUES
-(4, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(5, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(6, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(7, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(8, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(9, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(10, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(11, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(12, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(13, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(14, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(15, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(16, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(17, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(18, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(19, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(20, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(21, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(22, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(23, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(24, '', '', '', '', '', '0000-00-00', '', '', 0, '', ''),
-(25, '', '', '', '', '', '0000-00-00', '', '', 0, '', '');
+INSERT INTO `informasilainnya` (`id`, `nm1`, `hub1`, `no_telp1`, `alamat1`) VALUES
+(74, 'dhshsh', '-', '-', '-'),
+(75, 'di', '-', '-', '-'),
+(76, '-', '-', '-', '-'),
+(77, '-', '-', '-', '-'),
+(78, '-', '-', '-', '-'),
+(79, '-', '-', '-', '-'),
+(80, '-', '-', '-', '-'),
+(81, '-', '-', '-', '-'),
+(82, '-', '-', '-', '-'),
+(83, '-', '-', '-', '-'),
+(84, '-', '-', '-', '-'),
+(85, 'Eni Nurmalasari', 'Saudara Kandung', '876217282', 'Magelang'),
+(86, '-', '-', '-', '-');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `informasilainnya1`
+--
+
+CREATE TABLE `informasilainnya1` (
+  `id` int(11) NOT NULL,
+  `jns_penyakit` varchar(100) NOT NULL,
+  `waktu` varchar(110) NOT NULL,
+  `rs_kota` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `informasilainnya1`
+--
+
+INSERT INTO `informasilainnya1` (`id`, `jns_penyakit`, `waktu`, `rs_kota`) VALUES
+(1, '-', '-', '-');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `informasilainnya2`
+--
+
+CREATE TABLE `informasilainnya2` (
+  `id` int(11) NOT NULL,
+  `nm_perusahaan` varchar(100) NOT NULL,
+  `periode_krj` varchar(110) NOT NULL,
+  `posisi` varchar(100) NOT NULL,
+  `gaji_akhir` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `informasilainnya2`
+--
+
+INSERT INTO `informasilainnya2` (`id`, `nm_perusahaan`, `periode_krj`, `posisi`, `gaji_akhir`) VALUES
+(1, '-', '-', '-', '-'),
+(2, 'Cv Mekar Indah', '2018-2019', 'staff', '2000000'),
+(3, '-', '-', '-', '-');
 
 -- --------------------------------------------------------
 
@@ -485,48 +523,108 @@ CREATE TABLE `pendidikankegiatan` (
   `jenjang_pend_sd` varchar(100) DEFAULT NULL,
   `thn_pend_sd` int(10) DEFAULT NULL,
   `nm_sklh_sd` varchar(100) DEFAULT NULL,
-  `lulus_thn_sd` int(10) DEFAULT NULL,
-  `jns_bhs1` varchar(100) DEFAULT NULL,
-  `kem_dengar1` varchar(100) DEFAULT NULL,
-  `kem_baca1` varchar(100) DEFAULT NULL,
-  `kem_bicara1` varchar(100) DEFAULT NULL,
-  `kem_tulis1` varchar(100) DEFAULT NULL,
-  `nm_organisasi1` varchar(100) DEFAULT NULL,
-  `waktu1` date DEFAULT NULL,
-  `jabatan1` varchar(100) DEFAULT NULL,
-  `nm_pelatihan1` varchar(100) DEFAULT NULL,
-  `waktu_1` date DEFAULT NULL,
-  `penyelenggara1` varchar(100) DEFAULT NULL
+  `lulus_thn_sd` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `pendidikankegiatan`
 --
 
-INSERT INTO `pendidikankegiatan` (`id`, `jenjang_pend_sd`, `thn_pend_sd`, `nm_sklh_sd`, `lulus_thn_sd`, `jns_bhs1`, `kem_dengar1`, `kem_baca1`, `kem_bicara1`, `kem_tulis1`, `nm_organisasi1`, `waktu1`, `jabatan1`, `nm_pelatihan1`, `waktu_1`, `penyelenggara1`) VALUES
-(6, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(7, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(8, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(9, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(10, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(11, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(12, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(13, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(14, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(15, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(16, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(17, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(18, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(19, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(20, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(21, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(22, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(23, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(24, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(25, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(26, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(27, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', ''),
-(28, '', 0, '', 0, '', '', '', '', '', '', '0000-00-00', '', '', '0000-00-00', '');
+INSERT INTO `pendidikankegiatan` (`id`, `jenjang_pend_sd`, `thn_pend_sd`, `nm_sklh_sd`, `lulus_thn_sd`) VALUES
+(84, '-', 2019, 'RAWOOHH', 1018),
+(85, '-', 0, '-', 0),
+(86, '-', 0, '-', 0),
+(87, 'smp', 0, '-', 0),
+(88, 'smp', 0, '-', 0),
+(89, 'smp', 0, '-', 0),
+(90, '-', 0, '-', 0),
+(91, '-', 0, '-', 0),
+(92, 'SMK', 2014, 'SMK IT', 2017),
+(93, 'SMP', 2011, 'SMP IT', 2014),
+(94, 'SD', 2005, 'SD IT', 2011),
+(95, '-', 0, '-', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendidikankegiatan1`
+--
+
+CREATE TABLE `pendidikankegiatan1` (
+  `id` int(11) NOT NULL,
+  `jns_bhs` varchar(100) NOT NULL,
+  `kem_dengar` varchar(110) NOT NULL,
+  `kem_baca` varchar(100) NOT NULL,
+  `kem_bicara` varchar(100) NOT NULL,
+  `kem_tulis` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pendidikankegiatan1`
+--
+
+INSERT INTO `pendidikankegiatan1` (`id`, `jns_bhs`, `kem_dengar`, `kem_baca`, `kem_bicara`, `kem_tulis`) VALUES
+(1, '-', '-', '-', '-', '-'),
+(2, '-', '-', '-', '-', '-'),
+(3, 'ingris', '-', '-', '-', '-'),
+(4, 'ingris', '-', '-', '-', '-'),
+(5, 'ingris', '-', '-', '-', '-'),
+(6, '-', '-', '-', '-', '-'),
+(7, '-', '-', '-', '-', '-'),
+(8, 'INGGRIS', 'KURANG', 'BAIK', 'KURANG', 'BAIK'),
+(9, '-', '-', '-', '-', '-');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendidikankegiatan2`
+--
+
+CREATE TABLE `pendidikankegiatan2` (
+  `id` int(11) NOT NULL,
+  `nm_organisasi` varchar(100) NOT NULL,
+  `waktu` varchar(110) NOT NULL,
+  `jabatan` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pendidikankegiatan2`
+--
+
+INSERT INTO `pendidikankegiatan2` (`id`, `nm_organisasi`, `waktu`, `jabatan`) VALUES
+(1, 'roohis', '-', '-'),
+(2, '-', '-', '-'),
+(3, '-', '-', '-'),
+(4, 'PASKIBRAKA', '2014', 'SI. GIAT'),
+(5, '-', '-', '-');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pendidikankegiatan3`
+--
+
+CREATE TABLE `pendidikankegiatan3` (
+  `id` int(11) NOT NULL,
+  `nm_pelatihan` varchar(100) NOT NULL,
+  `waktu` varchar(110) NOT NULL,
+  `penyelenggara` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pendidikankegiatan3`
+--
+
+INSERT INTO `pendidikankegiatan3` (`id`, `nm_pelatihan`, `waktu`, `penyelenggara`) VALUES
+(1, '-', '', '-'),
+(2, 'hawhaw', '', 'psoa'),
+(3, 'hawhaw', '2012', 'psoa'),
+(4, 'hawhaw', '2012', 'psoa'),
+(5, '-', '-', '-'),
+(6, '-', '-', '-'),
+(7, 'Indo Tech soolution', '2018', '-'),
+(8, 'tekno pro', '2018', '-'),
+(9, '-', '-', '-');
 
 -- --------------------------------------------------------
 
@@ -620,7 +718,8 @@ INSERT INTO `recruitment` (`id_hiring`, `nama`, `posisi`, `user_input`, `tgl_lam
 (55, 'Dewi Puji Lestari', 'Manager', 'dewi', '2019-01-03', 'User Interview', 'Database Oracle Untuk Pemula.pdf', 'Hired'),
 (56, 'Atika Khuril Aini', 'Sistem Analis', 'atika', '2019-01-02', 'Pre-Interview', 'materi_1.pdf', 'Hired'),
 (57, 'Anwar', 'Staff', 'Member', '2002-06-07', 'User Interview', 'Materi-Rekayasa-Perangkat-Lunak-1.pdf', 'Hired'),
-(58, 'Aldo', 'Staff', 'Member', '2019-04-06', 'Skill Text', 'Materi-Rekayasa-Perangkat-Lunak-1.pdf', 'Hired');
+(58, 'Aldo', 'Staff', 'Member', '2019-04-06', 'Skill Text', 'Materi-Rekayasa-Perangkat-Lunak-1.pdf', 'Hired'),
+(59, 'Sekar', 'OA', 'Admin', '2019-02-06', 'CV Screening', 'Materi-Rekayasa-Perangkat-Lunak-1.pdf', 'Pre-screening');
 
 -- --------------------------------------------------------
 
@@ -794,6 +893,12 @@ ALTER TABLE `detailkeluarga`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `detailkeluarga1`
+--
+ALTER TABLE `detailkeluarga1`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `hukuman`
 --
 ALTER TABLE `hukuman`
@@ -805,6 +910,18 @@ ALTER TABLE `hukuman`
 -- Indexes for table `informasilainnya`
 --
 ALTER TABLE `informasilainnya`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `informasilainnya1`
+--
+ALTER TABLE `informasilainnya1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `informasilainnya2`
+--
+ALTER TABLE `informasilainnya2`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -849,6 +966,24 @@ ALTER TABLE `pendidikan`
 -- Indexes for table `pendidikankegiatan`
 --
 ALTER TABLE `pendidikankegiatan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pendidikankegiatan1`
+--
+ALTER TABLE `pendidikankegiatan1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pendidikankegiatan2`
+--
+ALTER TABLE `pendidikankegiatan2`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pendidikankegiatan3`
+--
+ALTER TABLE `pendidikankegiatan3`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -928,7 +1063,7 @@ ALTER TABLE `absen`
 -- AUTO_INCREMENT for table `biodata`
 --
 ALTER TABLE `biodata`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT for table `cuti`
@@ -940,19 +1075,37 @@ ALTER TABLE `cuti`
 -- AUTO_INCREMENT for table `datakeluarga`
 --
 ALTER TABLE `datakeluarga`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 
 --
 -- AUTO_INCREMENT for table `detailkeluarga`
 --
 ALTER TABLE `detailkeluarga`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+
+--
+-- AUTO_INCREMENT for table `detailkeluarga1`
+--
+ALTER TABLE `detailkeluarga1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `informasilainnya`
 --
 ALTER TABLE `informasilainnya`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
+
+--
+-- AUTO_INCREMENT for table `informasilainnya1`
+--
+ALTER TABLE `informasilainnya1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `informasilainnya2`
+--
+ALTER TABLE `informasilainnya2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `jadwal`
@@ -976,7 +1129,25 @@ ALTER TABLE `pendidikan`
 -- AUTO_INCREMENT for table `pendidikankegiatan`
 --
 ALTER TABLE `pendidikankegiatan`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+
+--
+-- AUTO_INCREMENT for table `pendidikankegiatan1`
+--
+ALTER TABLE `pendidikankegiatan1`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `pendidikankegiatan2`
+--
+ALTER TABLE `pendidikankegiatan2`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `pendidikankegiatan3`
+--
+ALTER TABLE `pendidikankegiatan3`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `pengalaman_krj`
@@ -994,7 +1165,7 @@ ALTER TABLE `pengambilan_cuti`
 -- AUTO_INCREMENT for table `recruitment`
 --
 ALTER TABLE `recruitment`
-  MODIFY `id_hiring` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id_hiring` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `shift`
