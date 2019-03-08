@@ -200,10 +200,16 @@ window.location="../'.$_SESSION['level'].'?module=home";
         <li><a href='?module=laporan&aksi=cuti' ><i class="glyphicon glyphicon-thumbs-up"></i><span>Sisa Cuti</span></a></li>-->
        </ul>
       </li>
+       <li class="treeview">
+       
+       <a href='grafik2.php' ><i class="fa fa-male"></i><span>Dashboard</span></a> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+      <ul class="treeview-menu">
 
-
-			
-          </ul>
+        <!--<li><a href='?module=sk_kerja' ><i class="fa fa-male"></i><span>Non Aktif Kerja baru</span></a></li>
+        <li><a href='?module=tambah_sk' ><i class="fa fa-male"></i><span>Tambah SK Kerja baru</span></a></li>-->
+      </ul>
+      </li>
         </section>
         <!-- /.sidebar -->
       </aside>
