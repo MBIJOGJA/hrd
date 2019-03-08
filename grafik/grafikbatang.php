@@ -1,10 +1,26 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <title></title>
     <script type="text/javascript" src="Chart.js"></script>
+    <meta charset="utf-8"/>
+    <title>Form Wizard with jQuery and PHP</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
+    <div class="box box-solid box-primary">
+                <div class="box-header">
+                <h3 class="btn btn disabled box-title">
+                <i class="fa fa-user-md"></i> Dashboard </h3>
+                <a class="btn btn-default btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+                <i class="fa fa-minus"></i></a>
+                    </div>
+                     <div class="box-body">
+                <table border="0" width="1030">
+                <div class="form-group">
    <?php 
     include 'koneksi.php';
     ?>
@@ -68,5 +84,9 @@
             }
         });
     </script>
+</div>
+</table>
+</div>
+</div>
 </body>
 </html>
