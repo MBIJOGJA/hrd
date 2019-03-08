@@ -202,7 +202,7 @@ window.location="../'.$_SESSION['level'].'?module=home";
       </li>
        <li class="treeview">
        
-       <a href='grafik2.php' ><i class="fa fa-male"></i><span>Dashboard</span></a> <i class="fa fa-angle-left pull-right"></i>
+       <a href='?module=grafik' ><i class="fa fa-male"></i><span>Dashboard</span></a> <i class="fa fa-angle-left pull-right"></i>
               </a>
       <ul class="treeview-menu">
 
