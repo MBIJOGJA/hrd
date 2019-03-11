@@ -1,4 +1,3 @@
-
 <html>
 <head>
     <title></title>
@@ -21,8 +20,15 @@
                      <div class="box-body">
                 <table border="0" width="1030">
                 <div class="form-group">
-   <?php 
-    include 'koneksi.php';
+    <?php
+$host="localhost";
+$user="root";
+$pass="";
+
+$db="sistempegawai";
+
+$sql=mysql_connect($host,$user,$pass);
+mysql_select_db($db,$sql);
     ?>
  
     <div style="width: 800px;margin: 0px auto;">
