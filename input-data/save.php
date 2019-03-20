@@ -11,24 +11,11 @@ if($koneksi){
     echo"gagal koneksi";
 }
 
-
-/*echo "<pre>";
-print_r($_POST);
-echo "</pre>";
-*/
-exit();
-=======
-$db = new PDO("mysql:host=localhost;dbname=sistempegawai","root","");
-if(isset($_POST['save'])){
-    $id = uniqid();
-
-=======
 //echo "<pre>";
 //print_r($_POST);
 //echo "</pre>";
 
 //exit();
-
 
     $nm_lengkap = $_POST['nm_lengkap'];
     $jk = $_POST['jeniskelamin'];
