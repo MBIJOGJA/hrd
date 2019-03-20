@@ -1,7 +1,7 @@
 <?php
 $server = "localhost"; //
 $username = "root";  //
-$password = ""; //
+$password = "root"; //
 $database = "sistempegawai";
 
 $konek = mysql_connect($server, $username, $password) or die ("Gagal konek ke server MySQL" .mysql_error());
