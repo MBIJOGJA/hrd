@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bafd2eea24d5b56b5b361ff0ab5e9048fd169317
 $host="localhost";
 $user="root";
 $password="";
@@ -11,11 +15,24 @@ if($koneksi){
     echo"gagal koneksi";
 }
 
+<<<<<<< HEAD
+/*echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+*/
+exit();
+=======
+$db = new PDO("mysql:host=localhost;dbname=sistempegawai","root","");
+if(isset($_POST['save'])){
+    $id = uniqid();
+>>>>>>> 8d1a8df5d184001b177fe1084d987fd37e3d126b
+=======
 //echo "<pre>";
 //print_r($_POST);
 //echo "</pre>";
 
 //exit();
+>>>>>>> bafd2eea24d5b56b5b361ff0ab5e9048fd169317
 
     $nm_lengkap = $_POST['nm_lengkap'];
     $jk = $_POST['jeniskelamin'];
