@@ -201,7 +201,6 @@ window.location="../'.$_SESSION['level'].'?module=home";
        </ul>
       </li>
 
-<<<<<<< HEAD
 <li class="treeview">
         <a href='?module=charts' ><i class="fa fa-pie-chart"></i><span>Recruitment charts</span></a> <i class="fa fa-angle-left pull-right"></i>
               </a>
@@ -217,17 +216,11 @@ window.location="../'.$_SESSION['level'].'?module=home";
        </ul>
       </li>
           
-=======
+
 
       
-          <li class="treeview">
-        <a href='?module=grafik\grafik.php' ><i></i><span>Dashboard</span></a> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-      <ul class="treeview-menu">
-        
-       </ul>
-      </li>
->>>>>>> db4ee4dd581ffffab68181fb4255954dda4739ee
+
+
         </section>
         <!-- /.sidebar -->
       </aside>
