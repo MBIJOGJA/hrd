@@ -201,9 +201,21 @@ window.location="../'.$_SESSION['level'].'?module=home";
        </ul>
       </li>
 
-
-			
-          </ul>
+<li class="treeview">
+        <a href='?module=charts' ><i class="fa fa-pie-chart"></i><span>Recruitment charts</span></a> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+      <ul class="treeview-menu">
+        <!-- <li><a href='?module=laporan&aksi=habis_kontrak' ><i class="glyphicon glyphicon-thumbs-down"></i><span>Karyawan Habis Kontrak</span></a></li>
+         <li><a href='?module=laporan&aksi=data_pegawai' ><i class="fa fa-user-md"></i><span>Data Pegawai</span></a></li>
+        <li><a href='?module=laporan&aksi=sk_kerja' ><i class="glyphicon glyphicon-briefcase"></i><span>SK Kerja</span></a></li>
+        <li><a href='?module=laporan&aksi=daftar_hukuman' ><i class="glyphicon glyphicon-thumbs-down"></i><span>Hukuman</span></a></li>
+        <li><a href='?module=laporan&aksi=daftar_prestasi' ><i class="glyphicon glyphicon-thumbs-up"></i><span>Prestasi</span></a>
+        <li><a href='?module=laporan&aksi=sip' ><i class="glyphicon glyphicon-thumbs-up"></i><span>SIP</span></a>
+        <li><a href='?module=laporan&aksi=str' ><i class="glyphicon glyphicon-thumbs-up"></i><span>STR</span></a></li>
+        <li><a href='?module=laporan&aksi=cuti' ><i class="glyphicon glyphicon-thumbs-up"></i><span>Sisa Cuti</span></a></li>-->
+       </ul>
+      </li>
+          
         </section>
         <!-- /.sidebar -->
       </aside>

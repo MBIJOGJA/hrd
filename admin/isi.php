@@ -91,5 +91,9 @@ else if ($_GET['module'] == "recruitment") {
 else if ($_GET['module'] == "form_input_data") {
 	include "module/generate_link/form.php";	
 }
+else if ($_GET['module'] == "charts") {
+	include "module/charts/chart3.php";	
+	
+}
 
 ?>
