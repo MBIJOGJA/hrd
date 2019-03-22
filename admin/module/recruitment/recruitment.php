@@ -30,7 +30,7 @@ default:
               <th class="col-sm-3">Nama recruitment</th>
               <th class="col-sm-1">Posisi</th>
               <th class="col-sm-1">User Input</th>   
-              <th class="col-sm-2">Tgl Lamaran</th> 
+              <th class="col-sm-2">Tgl Lamaran</th>  
               <th class="col-sm-1">Progres Recuitment</th> 
               <th class="col-sm-1">Resume</th>
               <th class="col-sm-1">Status Recruitment</th>
@@ -140,10 +140,12 @@ default:
               <label class="col-sm-4 control-label">Status Recruitment</label>
               <div class="col-sm-5">  
                 <select name="status_recruitment" class="form-control"><option> Pilih</option>
-                  <option name="status_recruitment" value="Passed"> Passed </option>
-                  <option name="status_recruitment" value="Failed"> Failed </option>
-                  <option name="status_recruitment" value="Hired"> Hired </option>
                   <option name="status_recruitment" value="Pre-screening"> Pre-screening </option>
+                  <option name="status_recruitment" value="Passed Interview"> Passed Interview</option>
+                  <option name="status_recruitment" value="Failed Interview"> Failed Interview</option>
+                  <option name="status_recruitment" value="Passed Test"> Passed Test</option>
+                  <option name="status_recruitment" value="Failed Test"> Failed Test</option>
+                  <option name="status_recruitment" value="Hired"> Hired </option>
                 </select>
               </div>
             </div>
@@ -246,16 +248,24 @@ $edit=mysql_fetch_array($data);
     <label class="col-sm-4 control-label"> Status Recruitment</label>
     <div class="col-sm-5">  
       <select name="status_recruitment" class="form-control"><option> Pilih </option>
-        <option name="status_recruitment" value="Passed" <?php if(($edit['status_recruitment'])== "Passed")
-        {echo "selected=\"selected\"";};?>> Passed </option>
-        <option name="status_recruitment" value="Failed" <?php if(($edit['status_recruitment'])== "Failed")
-        {echo "selected=\"selected\"";};?>> Failed </option>
+        <option name="status_recruitment" value="Pre-screening" <?php if(($edit['status_recruitment'])== "Pre-screening")
+        {echo "selected=\"selected\"";};?>> Pre-screening </option>
+
+        <option name="status_recruitment" value="Passed Interview" <?php if(($edit['status_recruitment'])== "Passed Interview")
+        {echo "selected=\"selected\"";};?>> Passed Interview </option>
+        
+        <option name="status_recruitment" value="Failed Interview" <?php if(($edit['status_recruitment'])== "Failed Interview")
+        {echo "selected=\"selected\"";};?>> Failed Interview </option>
+
+        <option name="status_recruitment" value="Passed Test" <?php if(($edit['status_recruitment'])== "Passed Test")
+        {echo "selected=\"selected\"";};?>> Passed Test </option>
+
+        <option name="status_recruitment" value="Failed Test" <?php if(($edit['status_recruitment'])== "Failed Test")
+        {echo "selected=\"selected\"";};?>> Failed Test </option>
 
         <option name="status_recruitment" value="Hired" <?php if(($edit['status_recruitment'])== "Hired")
         {echo "selected=\"selected\"";};?>> Hired </option>
 
-        <option name="status_recruitment" value="Pre-screening" <?php if(($edit['status_recruitment'])== "Pre-screening")
-        {echo "selected=\"selected\"";};?>> Pre-screening </option>
       </select>
     </div>
   </div>
