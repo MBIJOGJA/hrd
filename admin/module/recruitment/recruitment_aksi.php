@@ -8,6 +8,7 @@ $nama = $_POST['nama'];
 $posisi = $_POST['posisi'];
 $user_input = $_POST['user_input'];
 $tgl_lamaran = $_POST['tgl_lamaran'];
+$sumber = $_POST['sumber'];
 $progres_recruitment = $_POST['progres_recruitment'];
 $resume = ''; 
 if( isset( $_GET['resume'])) {
@@ -40,6 +41,7 @@ if($module=='recruitment' AND $aksi=='edit' ){
 		posisi = '$posisi',
 		user_input = '$user_input',
 		tgl_lamaran = '$tgl_lamaran',
+		sumber = '$sumber',
 		progres_recruitment = '$progres_recruitment',
 		resume = '$_POST[resume]',
 		status_recruitment = '$status_recruitment'
@@ -56,6 +58,7 @@ if($module=='recruitment' AND $aksi=='edit' ){
 		posisi = '$posisi',
 		user_input = '$user_input',
 		tgl_lamaran = '$tgl_lamaran',
+		sumber = '$sumber',
 		progres_recruitment = '$progres_recruitment',
 		resume = '$_POST[resume]',
 		status_recruitment = '$status_recruitment'
@@ -79,7 +82,7 @@ else if($module=='recruitment' AND $aksi=='tambah' ){
 	if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
 		if($ukuran < 50044070){			
 			move_uploaded_file($file_tmp, '../../module/recruitment/file/'.$namafile);
-			$sql = "INSERT INTO recruitment  (nama, posisi, user_input, tgl_lamaran, progres_recruitment, resume, status_recruitment) VALUES ('$nama', '$posisi', '$user_input', '$tgl_lamaran', '$progres_recruitment',  '$namafile', '$status_recruitment')";
+			$sql = "INSERT INTO recruitment  (nama, posisi, user_input, tgl_lamaran,sumber , progres_recruitment, resume, status_recruitment) VALUES ('$nama', '$posisi', '$user_input', '$tgl_lamaran','$sumber' ,'$progres_recruitment',  '$namafile', '$status_recruitment')";
 	$simpan = mysql_query($sql);
 	if($simpan)
 	{ 

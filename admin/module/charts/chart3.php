@@ -1,12 +1,7 @@
 <div class="halaman">
   <center><h2>Data Hasil Proses Recruitment</h2>
 <?php 
-$host="localhost";
-$user="root";
-$password="";
-$database="sistempegawai";
-$koneksi=mysql_connect($host,$user,$password);
-mysql_select_db($database,$koneksi);
+include "../../koneksi.php";
 //cek koneksi
 if($koneksi){
 } else {

@@ -30,7 +30,8 @@ default:
               <th class="col-sm-3">Nama recruitment</th>
               <th class="col-sm-1">Posisi</th>
               <th class="col-sm-1">User Input</th>   
-              <th class="col-sm-2">Tgl Lamaran</th>  
+              <th class="col-sm-2">Tgl Lamaran</th>
+              <th class="col-sm-1">Sumber Informasi</th> 
               <th class="col-sm-1">Progres Recuitment</th> 
               <th class="col-sm-1">Resume</th>
               <th class="col-sm-1">Status Recruitment</th>
@@ -53,6 +54,7 @@ default:
                 <td><?php echo $data['posisi']; ?></td>
                 <td><?php echo $data['user_input']; ?></td>
                 <td><?php echo $data[''] ." ". IndonesiaTgl($data['tgl_lamaran']); ?></td>
+                <td><?php echo $data['sumber']; ?></td>
                 <td><?php echo $data['progres_recruitment']; ?></td>
                 <td><?php echo $data['resume']; ?><a href="module/recruitment/file/<?php echo $data['resume']; ?>" ><i class="fa fa-download"></i></a></td>
                 <td><?php echo $data['status_recruitment']; ?></td>
@@ -116,6 +118,12 @@ default:
                 </div>
               </div>
             </div>
+            <div class="form-group">
+              <label class="col-sm-4 control-label">Sumber Informasi</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" value="<?php echo $edit['sumber']; ?>" name="sumber">
+                </div>
+              </div>
             <div class="form-group">
               <label class="col-sm-4 control-label">Progres Recruitment</label>
               <div class="col-sm-5">  
@@ -215,6 +223,12 @@ $edit=mysql_fetch_array($data);
     </div>
   </div>
 </div>
+<div class="form-group">
+    <label class="col-sm-4 control-label">Sumber Informasi</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" value="<?php echo $edit['sumber']; ?>" name="sumber">
+    </div>
+  </div>
   <div class="form-group">
     <label class="col-sm-4 control-label">Progres Recruitment</label>
     <div class="col-sm-5">  
